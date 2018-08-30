@@ -1,6 +1,6 @@
 body{
     margin: 0;
-
+    
 }
 
 header{
@@ -35,3 +35,12 @@ header div a{
     border-radius: 30px;
 }
 
+#form{
+    background-color: grey;
+    max-width: 300px;
+    display: block;
+}
+
+#form input{
+    margin: 20px;
+}

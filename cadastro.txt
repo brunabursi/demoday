@@ -1,0 +1,24 @@
+nome:Matheus
+email:Matheus@gmail.com
+telefone:14
+nome:Amanda
+email:brunokoppeman@outlook.com
+telefone:-15
+nome:bruna
+email:luucasmell@gmail.com
+telefone:27
+nome:bruna
+email:luucasmell@gmail.com
+telefone:42
+nome:bruna
+email:luucasmell@gmail.com
+telefone:42
+nome:Matheus
+ email:Matheus@gmail.com
+ telefone:'13212312312
+nome:Amanda
+ email:brunokoppeman@outlook.com
+ telefone:12312312312321
+nome:bruna
+ email:luucasmell@gmail.com
+ telefone:1231231231231111111

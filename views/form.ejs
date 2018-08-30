@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/fim.js" defer></script>
+    <title>ProjetoT</title>
+</head>
+<body>
+   <h1>Preencha seus dados</h1>
+    <div>
+        <form action="/form" method="post" id=form>
+            <input type="text" name="nome" placeholder="Seu nome completo">
+            <input type="email" name="email" placeholder="Seu email">
+            <input [type="number"] ::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;
+            } name="tel" placeholder="Celular">
+            <button>Enviar</button>
+        </form> 
+    </div>
+   
+</body>
+</html> 
