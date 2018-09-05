@@ -58,13 +58,18 @@ div a:hover{
     justify-content: space-around;
     padding: 40px;
 }
+
+.botoes button:hover{
+    cursor: pointer;
+    background-color: rgba(112, 70, 149, 0.5);
+}
 .botoes button{
 
     width: 150px;
     height: 70px;
     border-radius: 10px;
     border: none;
-    background: blueviolet;
+    background: rgba(112, 70, 149, 0.7);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 
@@ -146,8 +151,6 @@ div a:hover{
         border-radius: 2px;
         transition: 1s;
     }
-
-
 }
 
 
