@@ -94,18 +94,18 @@ div a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    padding: 10px 0;
 }
 .ideia h1{
     margin: 0;
     background: rgba(112, 70, 149, 0.7);
-
+    
 }
 .ideia span{
     margin: 0;
     background: rgba(112, 70, 149, 0.7);
-   width: 80%;
-   text-align: center;
+    width: 80%;
+    text-align: center;
 }
 
 .ideia div{
@@ -113,7 +113,28 @@ div a:hover{
     display: flex;
     text-align: justify;
     background: rgba(112, 70, 149, 0.7);
-  }
+}
+
+footer{
+    display: flex;
+    padding: 10px 0;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer div h1{
+    margin: 0;
+    font-size: 15px;
+}
+
+footer div p{
+    font-size: 12px;
+    text-align: center;
+}
 
 @media (max-width: 600px){
     /*Barra lateral*/
