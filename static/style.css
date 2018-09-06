@@ -30,14 +30,20 @@ header div a{
     font-family: 'Quicksand', sans-serif;
 }
 
+/**Hover dos botoes**/
+
 div a:hover{    
     background-color: black;
     border-radius: 30px;
 }
 
+/** Invisivel menu lateral para versao desktop**/
+
 .invisivel{
     visibility: hidden;
 } 
+
+/**Hover dos botoes**/
 .botoes{
     display: flex;
     align-items: center;
@@ -46,6 +52,7 @@ div a:hover{
     
 }
 
+/**Botoes do index **/
 .botoes button{
     width: 45%;
     height: 70px;
