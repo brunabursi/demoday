@@ -16,6 +16,10 @@ app.get('',(req,res)=>{
     res.render('index');
 });
 
+app.get('/home',(req,res)=>{
+    res.render('index');
+});
+
 app.get('/form',(req,res)=>{
     res.render('form');
 });
@@ -29,6 +33,6 @@ app.post('/form',(req,res)=>{
     });
 });
 
-app.listen(process.env.PORT || 80, () =>{
+app.listen(process.env.PORT || 3000, () =>{
     console.log('oks');
 });

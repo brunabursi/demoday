@@ -20,7 +20,7 @@ header div{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 201px;
+    width: 300px;
 }
 
 header div a{
@@ -36,6 +36,72 @@ div a:hover{
     background-color: black;
     border-radius: 30px;
 }
+
+.divLogin {
+    width: 200px;
+}
+
+.tituloH1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 15pt;
+}
+
+.formu {
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.formFormat {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center
+}
+
+.formFormat p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.formFormat2 {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px;
+    right: 10px;
+    text-align: center
+}
+
+.formFormat2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.formFormat input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    border: 0;
+    border-radius: 25px;
+    width: 300px;
+    height: 30px;
+}
+
+.formFormat2 input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    border: 0;
+    border-radius: 25px;
+    width: 300px;
+    height: 30px;
+}
+
 
 /** Invisivel menu lateral para versao desktop**/
 
@@ -138,9 +204,14 @@ footer div p{
     text-align: center;
 }
 
+
+
+
+
+
 @media (max-width: 600px){
+
     /*Barra lateral*/
-    
     .desktop{
         visibility: hidden;
     }

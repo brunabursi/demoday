@@ -1,19 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-        <%- include('shared/head')%>
+    <%- include('shared/head')%>
 </head>
 <body>
-   <h1>Preencha seus dados</h1>
-    <div>
-        <form action="/form" method="post" id=form>
-            <input type="text" name="nome" placeholder="Seu nome completo">
-            <input type="email" name="email" placeholder="Seu email">
-            <input [type="number"] ::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;
-            } name="tel" placeholder="Celular">
-            <button>Enviar</button>
-        </form> 
+    <header>
+        <div class="desktop">
+            <a href="home">Home</a>
+            <span class="barra">|</span>
+            <a href="">Contato</a>
+            <span class="barra">|</span>
+            <a id="QS" href="">Quem Somos</a>
+        </div>
+        <img src="" alt="logo">
+        <div class="desktop divLogin">
+            <a href="/form">Cadasto</a>
+            <span class="barra">|</span>
+            <a href="">Entrar</a>
+        </div>
+    </header>
+    <div class="tituloH1">
+        <h1>Preencha seus dados</h1>
     </div>
-   
+    <section class="formu">
+        <div class="formFormat">
+            <div>
+                <p>Você é /dev ?</p>
+                <form action="/form" method="post" id=form>
+                    <input type="text" name="nome" placeholder="Seu nome completo">
+                    <input [type="number"] ::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;} name="tel" placeholder="Celular">
+                    <input type="email" name="email" placeholder="Seu email">
+                    <input type="password" name="password" placeholder="Escolha uma Senha">
+                    <button>Enviar</button>
+                </form> 
+            </div>
+        </div>
+        <div class="formFormat2">
+            <div>
+                <p>Você é empresa ?</p>
+                <form action="/form" method="post" id=form>
+                    <input type="email" name="email" placeholder="Seu email">
+                    <input type="password" name="password" placeholder="Escolha uma Senha">
+                    <button>Enviar</button>
+                </form> 
+            </div>
+        </div>
+    </section>
+
 </body>
 </html> 
