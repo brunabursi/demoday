@@ -1,9 +1,48 @@
-body{
+body {
     margin: 0;
     background-color: rgb(224, 153, 21);
 }
 
-header{
+@-webkit-keyframes shadow-drop-center {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        border-radius: 20px;
+        transition: 1s;
+    }
+    100% {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        border-radius: 20px;
+        transition: 1s;
+    }
+}
+
+@keyframes shadow-drop-center {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        border-radius: 20px;
+        transition: 1s;
+    }
+    100% {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        border-radius: 20px;
+        padding: 15px;
+        transition: 1s;
+    }
+}
+
+.desktop a:hover {
+    transition: 1s;
+    -webkit-animation: shadow-drop-center 0.4s linear both;
+    animation: shadow-drop-center 0.4s linear both;
+}
+
+.divLogin a:hover {
+    transition: 1s;
+    -webkit-animation: shadow-drop-center 0.4s linear both;
+    animation: shadow-drop-center 0.4s linear both;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +54,7 @@ header{
     color: white;
 }
 
-header div{
+header div {
     margin: 0 10px;
     display: flex;
     justify-content: space-around;
@@ -23,19 +62,15 @@ header div{
     width: 300px;
 }
 
-header div a{
+header div a {
     text-decoration: none;
     padding: 2px 10px;
     color: white;
     font-family: 'Quicksand', sans-serif;
 }
 
-/**Hover dos botoes**/
 
-div a:hover{    
-    background-color: black;
-    border-radius: 30px;
-}
+/**Hover dos botoes**/
 
 .divLogin {
     width: 200px;
@@ -105,21 +140,24 @@ div a:hover{
 
 /** Invisivel menu lateral para versao desktop**/
 
-.invisivel{
+.invisivel {
     visibility: hidden;
-} 
+}
+
 
 /**Hover dos botoes**/
-.botoes{
+
+.botoes {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    
 }
 
+
 /**Botoes do index **/
-.botoes button{
+
+.botoes button {
     width: 45%;
     height: 70px;
     border-radius: 60px;
@@ -131,12 +169,12 @@ div a:hover{
     font-family: 'Quicksand', sans-serif;
 }
 
-.botoes button:hover{
+.botoes button:hover {
     cursor: pointer;
     background-color: rgba(112, 70, 149, 0.5);
 }
 
-.meio{
+.meio {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +182,7 @@ div a:hover{
     font-family: 'Quicksand', sans-serif;
 }
 
-.meio h1{
+.meio h1 {
     width: 460px;
     display: flex;
     align-items: center;
@@ -152,7 +190,7 @@ div a:hover{
     text-align: center;
 }
 
-.ideia{
+.ideia {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,61 +199,57 @@ div a:hover{
     color: white;
     font-family: 'Quicksand', sans-serif;
 }
-.ideia h1{
+
+.ideia h1 {
     margin: 0;
     background: rgba(112, 70, 149, 0.7);
-    
 }
-.ideia span{
+
+.ideia span {
     margin: 0;
     background-color: rgba(112, 70, 149, 0.7);
     width: 80%;
     text-align: center;
 }
 
-.ideia div{
+.ideia div {
     width: 80%;
     display: flex;
     text-align: justify;
     background-color: rgba(112, 70, 149, 0.7);
 }
 
-footer{
+footer {
     display: flex;
     padding: 10px 0;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    background-color:rgba(112, 70, 149, 0.7);
+    background-color: rgba(112, 70, 149, 0.7);
 }
 
-footer div{
+footer div {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-footer div h1{
+footer div h1 {
     margin: 0;
     font-size: 15px;
 }
 
-footer div p{
+footer div p {
     font-size: 12px;
     text-align: center;
 }
 
-
-
-
-
-
-@media (max-width: 600px){
-
+@media (max-width: 600px) {
     /*Barra lateral*/
-    .desktop{
+    .desktop {
+        transition: 1s;
         visibility: hidden;
     }
-    aside{
+    aside {
         height: 70vh;
         width: 350px;
         display: flex;
@@ -225,23 +259,18 @@ footer div p{
         position: absolute;
         margin-top: -100px;
         transform: translateX(-260px);
-        
     }
-    
-    
-    aside.mostrando{
+    aside.mostrando {
         background-color: rgba(112, 70, 149, 0.9);
         transform: translateX(0);
     }
-    
-    aside nav{
+    aside nav {
         margin-top: 50px;
         display: flex;
         flex-direction: column;
         height: 40%;
     }
-    
-    aside nav a{
+    aside nav a {
         padding: 10px;
         text-decoration: none;
         font-size: 20pt;
@@ -249,13 +278,12 @@ footer div p{
         color: white;
         font-family: 'Quicksand', sans-serif;
     }
-    aside h2{
+    aside h2 {
         margin-left: 30px;
         color: white;
         font-family: 'M PLUS Rounded 1c', sans-serif;
     }
-    
-    #hamburger{
+    #hamburger {
         width: 60px;
         height: 60px;
         position: absolute;
@@ -265,11 +293,9 @@ footer div p{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        cursor: pointer;    
-        
+        cursor: pointer;
     }
-    
-    .barrinha{
+    .barrinha {
         height: 4px;
         width: 40px;
         background-color: rgb(218, 106, 14);
@@ -277,6 +303,3 @@ footer div p{
         transition: 1s;
     }
 }
-
-
-
