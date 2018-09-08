@@ -203,6 +203,8 @@ header div a {
 .ideia h1 {
     margin: 0;
     background: rgba(112, 70, 149, 0.7);
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
 }
 
 .ideia span {
@@ -217,6 +219,11 @@ header div a {
     display: flex;
     text-align: justify;
     background-color: rgba(112, 70, 149, 0.7);
+    border-radius: 10px 10px 0 0;
+}
+
+.ideia :nth-child(4){
+    border-radius: 0 0 10px 10px;
 }
 
 footer {
