@@ -183,11 +183,14 @@ header div a {
 }
 
 .meio h1 {
-    width: 460px;
+    width: 600px;
+    min-width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .ideia {
@@ -198,6 +201,7 @@ header div a {
     padding: 10px 0;
     color: white;
     font-family: 'Quicksand', sans-serif;
+    
 }
 
 .ideia h1 {
@@ -212,6 +216,7 @@ header div a {
     background-color: rgba(112, 70, 149, 0.7);
     width: 80%;
     text-align: center;
+    padding: 5px;
 }
 
 .ideia div {
@@ -220,6 +225,7 @@ header div a {
     text-align: justify;
     background-color: rgba(112, 70, 149, 0.7);
     border-radius: 10px 10px 0 0;
+    padding: 5px;
 }
 
 .ideia :nth-child(4){
