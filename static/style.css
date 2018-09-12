@@ -80,6 +80,7 @@ header div a {
     border-radius: 25px;
     width: 300px;
     height: 30px;
+    background-color: rgba(112, 70, 149, 0.7);
 }
 
 .formFormat2 input {
@@ -91,8 +92,18 @@ header div a {
     border-radius: 25px;
     width: 300px;
     height: 30px;
+    background-color: rgba(112, 70, 149, 0.7);
 }
 
+.formFormat input::placeholder {
+    color: white;
+    padding-left: 10px;
+}
+
+.formFormat2 input::placeholder {
+    color: white;
+    padding-left: 10px;
+}
 
 /** Invisivel menu lateral para versao desktop**/
 
@@ -156,18 +167,18 @@ header div a {
     padding: 10px 0;
     color: white;
     font-family: 'Quicksand', sans-serif;
+    border: 1px solid red;
 }
 
 .ideia h1 {
     margin: 0;
     background: rgba(112, 70, 149, 0.7);
-    border-radius: 10px 10px 0 0;
+    border-radius: 0px 0px 0px 0px;
     padding: 5px;
 }
 
 .ideia span {
     margin: 0;
-    background-color: rgba(112, 70, 149, 0.7);
     width: 80%;
     text-align: center;
     padding: 5px;
@@ -177,8 +188,7 @@ header div a {
     width: 80%;
     display: flex;
     text-align: justify;
-    background-color: rgba(112, 70, 149, 0.7);
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 0px 10px 0px;
     padding: 5px;
 }
 
@@ -186,26 +196,39 @@ header div a {
     border-radius: 0 0 10px 10px;
 }
 
-footer {
+.meioIdeia {
+   background-color: rgba(112, 70, 149, 0.7);
+}
+
+.meioAlinha {
+
+}
+
+.devs {
+    margin-top: 1vh;
+}
+
+.devs {
     display: flex;
     padding: 10px 0;
     color: white;
     font-family: 'Quicksand', sans-serif;
     background-color: rgba(112, 70, 149, 0.7);
+    margin-bottom: 0;
 }
 
-footer div {
+.devs div {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-footer div h1 {
+.devs div h1 {
     margin: 0;
     font-size: 15px;
 }
 
-footer div p {
+.devs div p {
     font-size: 12px;
     text-align: center;
 }
