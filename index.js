@@ -23,6 +23,9 @@ app.get('/home',(req,res)=>{
 app.get('/form',(req,res)=>{
     res.render('form');
 });
+app.get('/usu',(req,res)=>{
+    res.render('usu');
+});
 
 app.post('/form',(req,res)=>{
     let string = `nome:${req.body.nome}\n email:${req.body.email}\n telefone:${req.body.tel}\n`;
