@@ -167,7 +167,6 @@ header div a {
     padding: 10px 0;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    border: 1px solid red;
 }
 
 .ideia h1 {
@@ -198,10 +197,6 @@ header div a {
 
 .meioIdeia {
    background-color: rgba(112, 70, 149, 0.7);
-}
-
-.meioAlinha {
-
 }
 
 .devs {

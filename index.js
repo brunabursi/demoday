@@ -8,8 +8,6 @@ const expressMongoDb = require('express-mongo-db');
 app.set('view engine', 'ejs')
 app.use('/static', express.static('static'));
 
-app.use(expressMongoDb('mongodb://bruna:bruna123@ds241012.mlab.com:41012/rent-a-bruno'));
-
 app.use(bodyParser.urlencoded());
 
 app.get('',(req,res)=>{
