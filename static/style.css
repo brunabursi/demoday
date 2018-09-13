@@ -1,5 +1,6 @@
 header {
     display: flex;
+    position: absolute;
     justify-content: space-between;
     align-items: center;
     height: 100px;
@@ -116,9 +117,13 @@ header div a {
 
 .botoes {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    height: 1vh;
+    width: 80vw;
+
 }
 
 
@@ -129,11 +134,17 @@ header div a {
     height: 70px;
     border-radius: 60px;
     border: none;
-    background: rgba(112, 70, 149, 0.7);
+    background: rgba(255, 255, 255, 0.7);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 27px;
     color: white;
     font-family: 'Quicksand', sans-serif;
+    color: rgba(112, 70, 149);
+    text-transform: uppercase;
+}
+
+.center {
+    justify-content: center;
 }
 
 .botoes button:hover {
@@ -147,6 +158,8 @@ header div a {
     justify-content: center;
     color: white;
     font-family: 'Quicksand', sans-serif;
+    height: 1vh;
+    width: 80vw;
 }
 
 .meio h1 {
@@ -167,6 +180,7 @@ header div a {
     padding: 10px 0;
     color: white;
     font-family: 'Quicksand', sans-serif;
+
 }
 
 .ideia h1 {
