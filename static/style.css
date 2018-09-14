@@ -1,3 +1,12 @@
+html,
+body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /*************** Header Start ***************/
 
 header {
@@ -160,25 +169,23 @@ header div a {
 
 /*************** Middle Section Start **************/
 
-.meio {
+.meio div {
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     color: white;
     font-family: 'Quicksand', sans-serif;
     width: 90vw;
-    margin: 80px 0;
+    margin: 40px 0;
 }
 
-.meio h1 {
-    width: 50vw;
+.meio div h1 {
+    width: 80vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
+    font-size: 30pt;
 }
 
 /*************** Middle Section End **************/
@@ -340,11 +347,6 @@ header div a {
         margin: 10px;
         text-align: center;
     }
-
-    .meio {
-        margin-top: 30vh;
-    }
-
 
 }
 
