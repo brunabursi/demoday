@@ -149,7 +149,7 @@ header div a {
 
 .botoes button:hover {
     cursor: pointer;
-    background-color: rgba(112, 70, 149, 0.5);
+    background-color: rgba(36, 32, 56, 0.5);
 }
 
 .meio {
@@ -314,5 +314,9 @@ header div a {
         float: left;
         margin: 10px;
         text-align: center;
+    }
+
+    .meio {
+        margin-top: 30vh;
     }
 }
