@@ -28,13 +28,13 @@
 }
 
 .desktop a:hover {
-    transition: 1s;
+    transition: 0.7s;
     -webkit-animation: shadow-drop-center 0.4s linear both;
     animation: shadow-drop-center 0.4s linear both;
 }
 
 .divLogin a:hover {
-    transition: 1s;
+    transition: 0.7s;
     -webkit-animation: shadow-drop-center 0.4s linear both;
     animation: shadow-drop-center 0.4s linear both;
 }
@@ -67,7 +67,7 @@ body {
     min-height: 100vh;
     padding: 0;
     text-align: center;
-    background-image: url("https://carrd.co/assets/images/bg.svg"),linear-gradient(45deg, #6E436C 25%, #2A4584 75%);
+    background-image: url("https://carrd.co/assets/images/bg.svg"),linear-gradient(90deg, #6E436C 25%, #2A4584 60%, #2B4686 15%);
     background-size: cover, cover;
     background-position: top, center;
     background-repeat: no-repeat, no-repeat;

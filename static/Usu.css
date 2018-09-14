@@ -1,31 +1,9 @@
-body{
-    margin: 0;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    margin: auto;
-    background-color: rgba(112, 70, 149, 0.7);
-    text-decoration: none;
-    color: white;
-}
-
-header div {
-    margin: 0 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 300px;
-}
-img{
+/*img{
     border-radius: 50%;
     height: 20vh;
     width: 20vh;
     margin-top: 10px;
-}
+}*/
 
 .VazioSup {
     height: 40vh;
@@ -80,7 +58,4 @@ img{
     font-size: 15pt;
     font-weight: normal;
 }
-button {
-    color: black;
-    
-}
+

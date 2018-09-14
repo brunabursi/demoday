@@ -26,25 +26,17 @@ header div a {
     font-family: 'Quicksand', sans-serif;
 }
 
-
-/**Hover dos botoes**/
-
 .divLogin {
     width: 200px;
 }
 
-.tituloH1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
-    align-items: center;
-    font-size: 15pt;
-}
-
 .formu {
     display: flex;
-    margin: 10px;
+    margin: auto;
     justify-content: space-around;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    margin: auto;
 }
 
 .formFormat {
@@ -82,6 +74,8 @@ header div a {
     width: 300px;
     height: 30px;
     background-color: rgba(112, 70, 149, 0.7);
+    border: 1px solid;
+    padding: 10px;
 }
 
 .formFormat2 input {
@@ -94,16 +88,20 @@ header div a {
     width: 300px;
     height: 30px;
     background-color: rgba(112, 70, 149, 0.7);
+    border: 1px solid;
+    padding: 10px;
 }
 
 .formFormat input::placeholder {
     color: white;
     padding-left: 10px;
+    font-size: 13pt;
 }
 
 .formFormat2 input::placeholder {
     color: white;
     padding-left: 10px;
+    font-size: 13pt;
 }
 
 /** Invisivel menu lateral para versao desktop**/
@@ -120,8 +118,7 @@ header div a {
     position: relative;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    height: 1vh;
+    margin: 30px;
     width: 80vw;
 
 }
@@ -154,16 +151,17 @@ header div a {
 
 .meio {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    height: 1vh;
-    width: 80vw;
+    width: 90vw;
+    margin: 80px 0;
 }
 
 .meio h1 {
-    width: 600px;
+    width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,7 +208,7 @@ header div a {
 }
 
 .meioIdeia {
-   background-color: rgba(112, 70, 149, 0.7);
+ background-color: rgba(112, 70, 149, 0.7);
 }
 
 .devs {
@@ -242,7 +240,7 @@ header div a {
     text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     /*Barra lateral*/
     .desktop {
         transition: 1s;
