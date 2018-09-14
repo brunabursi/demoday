@@ -47,11 +47,10 @@ header div a {
 
 .formu {
     display: flex;
-    margin: auto;
     justify-content: space-around;
     position: relative;
     font-family: 'Quicksand', sans-serif;
-    margin: auto;
+    margin: 0 auto auto auto;
 }
 
 .formFormat {
@@ -163,7 +162,7 @@ header div a {
 
 
 .center {
-    justify-content: center;
+    justify-content: center !important;
 }
 
 
@@ -186,6 +185,7 @@ header div a {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 30pt;
+    justify-content: center;
 }
 
 /*************** Middle Section End **************/
@@ -226,7 +226,7 @@ header div a {
     padding: 5px;
 }
 
-.ideia :nth-child(4) {
+.ideia:nth-child(4) {
     border-radius: 0 0 10px 10px;
 }
 
@@ -294,30 +294,23 @@ header div a {
         visibility: hidden;
     }
     aside {
-        height: 70vh;
         width: 350px;
-        display: flex;
         flex-direction: column;
         justify-content: left;
-        align-items: left;
-        position: absolute;
-        margin-top: -100px;
-        transform: translateX(-260px);
+        position: static;
     }
     aside.mostrando {
         background-color: rgba(112, 70, 149, 0.9);
         transform: translateX(0);
     }
-    aside nav {
+    aside ul {
         margin-top: 50px;
-        display: flex;
         flex-direction: column;
-        height: 40%;
+        list-style-type:none;
     }
-    aside nav a {
-        padding: 10px;
+    aside ul a {
         text-decoration: none;
-        font-size: 20pt;
+        font-size: 10pt;
         margin-left: 20px;
         color: white;
         font-family: 'Quicksand', sans-serif;
@@ -327,6 +320,16 @@ header div a {
         color: white;
         font-family: 'M PLUS Rounded 1c', sans-serif;
     }
+
+    .meio div h1 {
+        font-size: 11pt;
+    }
+
+    .botoes button{
+        font-size: 9pt;
+        height: 40px;
+    }
+
     #hamburger {
         width: 60px;
         height: 60px;

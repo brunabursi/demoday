@@ -40,42 +40,44 @@
 
     <!-- Middle text Section -->
 
-    <div class="meio">
-        <h1>Preencha seus dados</h1>
-    </div>
-
-    <!-- Form Section -->
-
-    <section class="formu">
-        <div class="formFormat">
-            <div>
-                <p>Você é /dev ?</p>
-                <form action="/form" method="post" id=form>
-                    <input type="text" name="nome" placeholder="Seu nome completo">
-                    <input [type="number" ] ::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;} name="tel" placeholder="Celular">
-                    <input type="email" name="email" placeholder="Seu email">
-                    <input type="password" name="password" placeholder="Escolha uma Senha">
-                    <button>Enviar</button>
-                </form>
-            </div>
-        </div>
-        <div class="formFormat2">
-            <div>
-                <p>Você é empresa ?</p>
-                <form action="/form" method="post" id=form>
-                    <input type="email" name="email" placeholder="Seu email">
-                    <input type="password" name="password" placeholder="Escolha uma Senha">
-                    <button>Enviar</button>
-                </form>
-            </div>
+    <section class="meio center">
+        <div>
+            <h1>Preencha com seus dados !</h1>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    
-    <footer>
-        
-    </footer>
-</body>
+        <!-- Form Section -->
 
-</html>
+        <section class="formu">
+            <div class="formFormat">
+                <div>
+                    <p>Você é /dev ?</p>
+                    <form action="/form" method="post" id=form>
+                        <input type="text" name="nome" placeholder="Seu nome completo">
+                        <input [type="number" ] ::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;} name="tel" placeholder="Celular">
+                        <input type="email" name="email" placeholder="Seu email">
+                        <input type="password" name="password" placeholder="Escolha uma Senha">
+                        <button>Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="formFormat2">
+                <div>
+                    <p>Você é empresa ?</p>
+                    <form action="/form" method="post" id=form>
+                        <input type="email" name="email" placeholder="Seu email">
+                        <input type="password" name="password" placeholder="Escolha uma Senha">
+                        <button>Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+
+        <footer>
+
+        </footer>
+    </body>
+
+    </html>
