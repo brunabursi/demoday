@@ -238,11 +238,6 @@ header div a {
 
 /*************** Devs Section Start **************/
 
-
-.devs {
-    margin-top: 1vh;
-}
-
 .devs {
     display: flex;
     padding: 10px 0;
@@ -250,12 +245,28 @@ header div a {
     font-family: 'Quicksand', sans-serif;
     background-color: rgba(112, 70, 149, 0.7);
     margin-bottom: 0;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+.devs img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.devsImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 
 .devs div {
     display: flex;
     flex-direction: column;
     text-align: center;
+
 }
 
 .devs div h1 {
@@ -275,7 +286,9 @@ header div a {
 
 
 @media (max-width: 700px) {
-    /*Barra lateral*/
+
+/*************** Barra Lateral Start**************/
+
     .desktop {
         transition: 1s;
         visibility: hidden;
