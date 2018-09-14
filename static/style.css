@@ -1,3 +1,5 @@
+/*************** Header Start ***************/
+
 header {
     display: flex;
     position: absolute;
@@ -29,6 +31,10 @@ header div a {
 .divLogin {
     width: 200px;
 }
+
+/*************** Header End *************/
+
+/*************** Form Start *************/
 
 .formu {
     display: flex;
@@ -104,27 +110,26 @@ header div a {
     font-size: 13pt;
 }
 
-/** Invisivel menu lateral para versao desktop**/
+/*************** Form End *************/
+
+/***************  Invisivel menu lateral para versao desktop Start ***********/
 
 .invisivel {
     visibility: hidden;
 }
 
+/***************  Invisivel menu lateral para versao desktop End ***********/
 
-/**Hover dos botoes**/
+/***************  Buttons Start ****************/
 
 .botoes {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: space-between;
-    margin: 30px;
     width: 80vw;
 
 }
-
-
-/**Botoes do index **/
 
 .botoes button {
     width: 45%;
@@ -140,14 +145,20 @@ header div a {
     text-transform: uppercase;
 }
 
-.center {
-    justify-content: center;
-}
-
 .botoes button:hover {
     cursor: pointer;
     background-color: rgba(36, 32, 56, 0.5);
 }
+
+/***************  Buttons End ****************/
+
+
+.center {
+    justify-content: center;
+}
+
+
+/*************** Middle Section Start **************/
 
 .meio {
     display: flex;
@@ -169,6 +180,11 @@ header div a {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
+
+/*************** Middle Section End **************/
+
+/*************** Idea Section Start **************/
+
 
 .ideia {
     display: flex;
@@ -211,6 +227,11 @@ header div a {
  background-color: rgba(112, 70, 149, 0.7);
 }
 
+/*************** Idea Section End **************/
+
+/*************** Devs Section Start **************/
+
+
 .devs {
     margin-top: 1vh;
 }
@@ -239,6 +260,12 @@ header div a {
     font-size: 12px;
     text-align: center;
 }
+
+/*************** Devs Section End **************/
+
+/*************** Mobile Version 700px Start **************/
+
+
 
 @media (max-width: 700px) {
     /*Barra lateral*/
@@ -317,4 +344,7 @@ header div a {
     .meio {
         margin-top: 30vh;
     }
+
+
 }
+
