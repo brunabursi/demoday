@@ -1,9 +1,10 @@
-/*img{
+
+.perfil img{
     border-radius: 50%;
     height: 20vh;
     width: 20vh;
     margin-top: 10px;
-}*/
+}
 
 .VazioSup {
     height: 40vh;
@@ -58,4 +59,7 @@
     font-size: 15pt;
     font-weight: normal;
 }
-
+.jobC button {
+    color: black;
+    
+}

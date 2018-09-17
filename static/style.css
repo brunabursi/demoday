@@ -13,6 +13,7 @@ header {
     display: flex;
     position: absolute;
     justify-content: space-between;
+	
     align-items: center;
     height: 100px;
     width: 100%;
@@ -219,7 +220,7 @@ header div a {
 }
 
 .ideia div {
-    width: 80%;
+    width: 0%;
     display: flex;
     text-align: justify;
     border-radius: 10px 0px 10px 0px;
@@ -243,9 +244,9 @@ header div a {
     padding: 10px 0;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    background-color: rgba(112, 70, 149, 0.7);
+    
     margin-bottom: 0;
-    border-radius: 10px;
+   
     margin: 0px;
 }
 
@@ -266,19 +267,23 @@ header div a {
     display: flex;
     flex-direction: column;
     text-align: center;
-
+	margin-top: 0vw;
+	height: 15vh;
 }
-
 .devs div h1 {
     margin: 0;
     font-size: 15px;
+	
 }
 
 .devs div p {
     font-size: 12px;
     text-align: center;
 }
-
+.devs2{
+	background-color: rgba(112, 70, 149, 0.7);
+	
+}
 /*************** Devs Section End **************/
 
 /*************** Mobile Version 700px Start **************/
@@ -290,14 +295,17 @@ header div a {
 /*************** Barra Lateral Start**************/
 
     .desktop {
-        transition: 1s;
+        
         visibility: hidden;
+		
     }
     aside {
-        width: 350px;
+		height: 100%;
+        width: 80%;
         flex-direction: column;
         justify-content: left;
-        position: static;
+        position:relative;
+		 
     }
     aside.mostrando {
         background-color: rgba(112, 70, 149, 0.9);
@@ -305,8 +313,10 @@ header div a {
     }
     aside ul {
         margin-top: 50px;
+		display: flex;
         flex-direction: column;
         list-style-type:none;
+		
     }
     aside ul a {
         text-decoration: none;
