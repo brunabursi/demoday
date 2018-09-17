@@ -1,6 +1,6 @@
 html,
 body {
-    display: flex;
+    /*display: flex;*/
     width: 100%;
     height: 100%;
     margin: 0;
@@ -137,7 +137,6 @@ header div a {
     align-items: center;
     justify-content: space-between;
     width: 80vw;
-
 }
 
 .botoes button {
@@ -241,13 +240,12 @@ header div a {
 
 .devs {
     display: flex;
+    position: relative;
     padding: 10px 0;
     color: white;
-    font-family: 'Quicksand', sans-serif;
-    
-    margin-bottom: 0;
-   
-    margin: 0px;
+    font-family: 'Quicksand', sans-serif; 
+    margin: 10px 0 30vh 0;
+    width: 92vw;
 }
 
 .devs img {
@@ -272,22 +270,21 @@ header div a {
 }
 .devs div h1 {
     margin: 0;
-    font-size: 15px;
-	
+    font-size: 13pt;
 }
 
 .devs div p {
-    font-size: 12px;
+    font-size: 9pt;
     text-align: center;
 }
+
 .devs2{
+    width: 100%;
 	background-color: rgba(112, 70, 149, 0.7);
-	
 }
 /*************** Devs Section End **************/
 
 /*************** Mobile Version 700px Start **************/
-
 
 
 @media (max-width: 700px) {
@@ -295,28 +292,31 @@ header div a {
 /*************** Barra Lateral Start**************/
 
     .desktop {
-        
         visibility: hidden;
-		
     }
+
     aside {
 		height: 100%;
         width: 80%;
         flex-direction: column;
         justify-content: left;
-        position:relative;
-		 
+        position: absolute;
+        left: 0;
+        transform: translateX(0);
+        transition: 1s;
     }
     aside.mostrando {
-        background-color: rgba(112, 70, 149, 0.9);
+        background-color: rgba(112, 70, 149);
         transform: translateX(0);
+        z-index: 1;
+        transition: 1s;
     }
     aside ul {
         margin-top: 50px;
 		display: flex;
         flex-direction: column;
-        list-style-type:none;
-		
+        list-style-type: none;
+        text-align: left;
     }
     aside ul a {
         text-decoration: none;
@@ -331,6 +331,35 @@ header div a {
         font-family: 'M PLUS Rounded 1c', sans-serif;
     }
 
+    #hamburger {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 15px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+
+    .barrinha {
+        height: 4px;
+        width: 40px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 2px;
+        transition: 1s;
+    }
+
+/*************** Barra Lateral End **************/
+
+/*************** Meio Start **************/
+
+
+    .meio {
+        margin-top: 15vh !important;
+    }
+
     .meio div h1 {
         font-size: 11pt;
     }
@@ -340,25 +369,32 @@ header div a {
         height: 40px;
     }
 
-    #hamburger {
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        display: flex;
-        flex-direction: column;
+/*************** Meio End **************/
+
+/*************** Devs Start **************/
+
+    .devs {
+        display: block;
+        height: auto;
         align-items: center;
-        justify-content: space-evenly;
-        cursor: pointer;
+        margin: auto;
     }
-    .barrinha {
-        height: 4px;
-        width: 40px;
-        background-color: rgb(218, 106, 14);
-        border-radius: 2px;
-        transition: 1s;
+
+    .devs div {
+        height: auto;
     }
+
+    .devs2 {
+        border-radius: 30px;
+        width: 60vw;
+    }
+
+
+/*************** Devs End **************/
+
+/*************** Form Page Start **************/
+
+
     .formu {
         display: block;
     }
@@ -373,6 +409,9 @@ header div a {
         margin: 10px;
         text-align: center;
     }
+
+/*************** Form Page End **************/
+
 
 }
 
