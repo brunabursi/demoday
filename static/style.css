@@ -1,19 +1,28 @@
-html,
+
 body {
-    /*display: flex;*/
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+    background-image: url('/static/img/bgimg.jpg');
 }
 
 /*************** Header Start ***************/
 
+/*************** Barra Lateral Start**************/
+
+.desktop {
+    visibility: hidden;
+}
+
+.invisivel {
+        visibility: hidden;
+    }
+
 header {
-    display: flex;
+    display: block;
     position: absolute;
     justify-content: space-between;
-	
     align-items: center;
     height: 100px;
     width: 100%;
@@ -31,135 +40,80 @@ header div {
     width: 300px;
 }
 
+header img {
+    width: 60px;
+    height: 60px;
+}
+
 header div a {
     text-decoration: none;
     padding: 2px 10px;
     color: white;
     font-family: 'Quicksand', sans-serif;
 }
-
 .divLogin {
     width: 200px;
 }
 
-/*************** Header End *************/
-
-/*************** Form Start *************/
-
-.formu {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    font-family: 'Quicksand', sans-serif;
-    margin: 0 auto auto auto;
+aside {
+  height: 100%;
+  width: 80%;
+  flex-direction: column;
+  justify-content: left;
+  position: absolute;
+  left: 0;
+  transform: translateX(0);
+  transition: 1s;
 }
-
-.formFormat {
-    display: inline-flex;
-    flex-direction: column;
-    margin: 10px;
-    text-align: center
+aside.mostrando {
+    background-color: rgba(112, 70, 149);
+    transform: translateX(0);
+    z-index: 1;
+    transition: 1s;
 }
-
-.formFormat p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-
-.formFormat2 {
-    display: inline-flex;
-    flex-direction: column;
-    margin: 10px;
-    right: 10px;
-    text-align: center
-}
-
-.formFormat2 p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-
-.formFormat input {
+aside ul {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 20px;
-    border: 0;
-    border-radius: 25px;
-    width: 300px;
-    height: 30px;
-    background-color: rgba(112, 70, 149, 0.7);
-    border: 1px solid;
-    padding: 10px;
+    list-style-type: none;
+    text-align: left;
 }
-
-.formFormat2 input {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 20px;
-    border: 0;
-    border-radius: 25px;
-    width: 300px;
-    height: 30px;
-    background-color: rgba(112, 70, 149, 0.7);
-    border: 1px solid;
-    padding: 10px;
-}
-
-.formFormat input::placeholder {
-    color: white;
-    padding-left: 10px;
-    font-size: 13pt;
-}
-
-.formFormat2 input::placeholder {
-    color: white;
-    padding-left: 10px;
-    font-size: 13pt;
-}
-
-/*************** Form End *************/
-
-/***************  Invisivel menu lateral para versao desktop Start ***********/
-
-.invisivel {
-    visibility: hidden;
-}
-
-/***************  Invisivel menu lateral para versao desktop End ***********/
-
-/***************  Buttons Start ****************/
-
-.botoes {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
-    width: 80vw;
-}
-
-.botoes button {
-    width: 45%;
-    height: 70px;
-    border-radius: 60px;
-    border: none;
-    background: rgba(255, 255, 255, 0.7);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 27px;
+aside ul a {
+    text-decoration: none;
+    font-size: 10pt;
+    margin-left: 20px;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    color: rgba(112, 70, 149);
-    text-transform: uppercase;
+}
+aside h2 {
+    margin-left: 30px;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
-.botoes button:hover {
+#hamburger {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     cursor: pointer;
-    background-color: rgba(36, 32, 56, 0.5);
 }
 
-/***************  Buttons End ****************/
+.barrinha {
+    height: 4px;
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    transition: 1s;
+}
 
+/*************** Barra Lateral End **************/
+
+/*************** Meio Start **************/
 
 .center {
     justify-content: center !important;
@@ -184,61 +138,367 @@ header div a {
     display: flex;
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-size: 30pt;
+    font-size: 11pt;
     justify-content: center;
 }
 
-/*************** Middle Section End **************/
+.meio {
+    margin-top: 15vh !important;
+}
 
-/*************** Idea Section Start **************/
 
+.botoes {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+}
 
-.ideia {
+.botoes button {
+    width: 45%;
+    height: 40px;
+    border-radius: 60px;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(112, 70, 149);
+    text-transform: uppercase;
+}
+
+.botoes button:hover {
+    cursor: pointer;
+    background-color: rgba(36, 32, 56, 0.5);
+}
+
+/*************** Meio End **************/
+
+/*************** Devs Start **************/
+
+.devs {
+    display: flex;
+    position: relative;
+    padding: 10px 0;
+    color: white;
+    font-family: 'Quicksand', sans-serif; 
+    margin: auto;
+    width: 92vw;
+    height: auto;
+    align-items: center;
+}
+
+.devs img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.devsImg {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 10px 0;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-
+    margin: 10px;
 }
 
-.ideia h1 {
-    margin: 0;
-    background: rgba(112, 70, 149, 0.7);
-    border-radius: 0px 0px 0px 0px;
-    padding: 5px;
-}
-
-.ideia span {
-    margin: 0;
-    width: 80%;
-    text-align: center;
-    padding: 5px;
-}
-
-.ideia div {
-    width: 0%;
+.devs div {
     display: flex;
-    text-align: justify;
-    border-radius: 10px 0px 10px 0px;
-    padding: 5px;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0vw;
+    height: auto;
+}
+.devs div h1 {
+    margin: 0;
+    font-size: 13pt;
 }
 
-.ideia:nth-child(4) {
-    border-radius: 0 0 10px 10px;
+.devs div p {
+    font-size: 9pt;
+    text-align: center;
 }
 
-.meioIdeia {
- background-color: rgba(112, 70, 149, 0.7);
+.devs2{
+    width: 100%;
+    background-color: rgba(112, 70, 149, 0.7);
+    border-radius: 30px;
+    width: 60vw;
 }
 
-/*************** Idea Section End **************/
 
-/*************** Devs Section Start **************/
+/*************** Devs End **************/
 
-.devs {
+/*************** Form Page Start **************/
+
+
+.formu {
+    display: block;
+}
+.formFormat {
+    display: block;
+    margin: 10px;
+    text-align: center;
+}
+.formFormat2 {
+    display: block;
+    float: left;
+    margin: 10px;
+    text-align: center;
+}
+
+/*************** Form Page End **************/
+
+
+
+/*************** Mobile Version 700px Start **************/
+
+
+@media (min-width: 900px) {
+
+    header {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        margin: auto;
+        background-color: rgba(112, 70, 149, 0.7);
+        text-decoration: none;
+        color: white;
+    }
+
+    header div {
+        margin: 0 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 300px;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    header div a {
+        text-decoration: none;
+        padding: 2px 10px;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .divLogin {
+        width: 200px;
+    }
+
+    .desktop {
+        visibility: visible;
+    }
+
+    #hamburger {
+        visibility: hidden !important;
+    }
+
+    /*************** Header End *************/
+
+    /*************** Form Start *************/
+
+    .formu {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        font-family: 'Quicksand', sans-serif;
+        margin: 0 auto auto auto;
+    }
+
+    .formFormat {
+        display: inline-flex;
+        flex-direction: column;
+        margin: 10px;
+        text-align: center
+    }
+
+    .formFormat p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    .formFormat2 {
+        display: inline-flex;
+        flex-direction: column;
+        margin: 10px;
+        right: 10px;
+        text-align: center
+    }
+
+    .formFormat2 p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    .formFormat input {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px;
+        border: 0;
+        border-radius: 25px;
+        width: 300px;
+        height: 30px;
+        background-color: rgba(112, 70, 149, 0.7);
+        border: 1px solid;
+        padding: 10px;
+    }
+
+    .formFormat2 input {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px;
+        border: 0;
+        border-radius: 25px;
+        width: 300px;
+        height: 30px;
+        background-color: rgba(112, 70, 149, 0.7);
+        border: 1px solid;
+        padding: 10px;
+    }
+
+    .formFormat input::placeholder {
+        color: white;
+        padding-left: 10px;
+        font-size: 13pt;
+    }
+
+    .formFormat2 input::placeholder {
+        color: white;
+        padding-left: 10px;
+        font-size: 13pt;
+    }
+
+    /*************** Form End *************/
+
+    /***************  Invisivel menu lateral para versao desktop Start ***********/
+
+    .invisivel {
+        visibility: hidden;
+    }
+
+    /***************  Invisivel menu lateral para versao desktop End ***********/
+
+    /***************  Buttons Start ****************/
+
+    .botoes {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        width: 80vw;
+    }
+
+    .botoes button {
+        width: 45%;
+        height: 70px;
+        border-radius: 60px;
+        border: none;
+        background: rgba(255, 255, 255, 0.7);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 27px;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        color: rgba(112, 70, 149);
+        text-transform: uppercase;
+    }
+
+    .botoes button:hover {
+        cursor: pointer;
+        background-color: rgba(36, 32, 56, 0.5);
+    }
+
+    /***************  Buttons End ****************/
+
+
+    .center {
+        justify-content: center !important;
+    }
+
+
+    /*************** Middle Section Start **************/
+
+    .meio div {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        width: 90vw;
+        margin: 40px 0;
+    }
+
+    .meio div h1 {
+        width: 80vw;
+        display: flex;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-size: 30pt;
+        justify-content: center;
+    }
+
+    /*************** Middle Section End **************/
+
+    /*************** Idea Section Start **************/
+
+
+    .ideia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 0;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+
+    }
+
+    .ideia h1 {
+        margin: 0;
+        background: rgba(112, 70, 149, 0.7);
+        border-radius: 0px 0px 0px 0px;
+        padding: 5px;
+    }
+
+    .ideia span {
+        margin: 0;
+        width: 80%;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .ideia div {
+        width: 0%;
+        display: flex;
+        text-align: justify;
+        border-radius: 10px 0px 10px 0px;
+        padding: 5px;
+    }
+
+    .ideia:nth-child(4) {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .meioIdeia {
+     background-color: rgba(112, 70, 149, 0.7);
+ }
+
+ /*************** Idea Section End **************/
+
+ /*************** Devs Section Start **************/
+
+ .devs {
     display: flex;
     position: relative;
     padding: 10px 0;
@@ -265,8 +525,8 @@ header div a {
     display: flex;
     flex-direction: column;
     text-align: center;
-	margin-top: 0vw;
-	height: 15vh;
+    margin-top: 0vw;
+    height: 15vh;
 }
 .devs div h1 {
     margin: 0;
@@ -280,138 +540,9 @@ header div a {
 
 .devs2{
     width: 100%;
-	background-color: rgba(112, 70, 149, 0.7);
+    background-color: rgba(112, 70, 149, 0.7);
 }
 /*************** Devs Section End **************/
-
-/*************** Mobile Version 700px Start **************/
-
-
-@media (max-width: 700px) {
-
-/*************** Barra Lateral Start**************/
-
-    .desktop {
-        visibility: hidden;
-    }
-
-    aside {
-		height: 100%;
-        width: 80%;
-        flex-direction: column;
-        justify-content: left;
-        position: absolute;
-        left: 0;
-        transform: translateX(0);
-        transition: 1s;
-    }
-    aside.mostrando {
-        background-color: rgba(112, 70, 149);
-        transform: translateX(0);
-        z-index: 1;
-        transition: 1s;
-    }
-    aside ul {
-        margin-top: 50px;
-		display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        text-align: left;
-    }
-    aside ul a {
-        text-decoration: none;
-        font-size: 10pt;
-        margin-left: 20px;
-        color: white;
-        font-family: 'Quicksand', sans-serif;
-    }
-    aside h2 {
-        margin-left: 30px;
-        color: white;
-        font-family: 'M PLUS Rounded 1c', sans-serif;
-    }
-
-    #hamburger {
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        top: 15px;
-        left: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        cursor: pointer;
-    }
-
-    .barrinha {
-        height: 4px;
-        width: 40px;
-        background-color: rgb(255, 255, 255);
-        border-radius: 2px;
-        transition: 1s;
-    }
-
-/*************** Barra Lateral End **************/
-
-/*************** Meio Start **************/
-
-
-    .meio {
-        margin-top: 15vh !important;
-    }
-
-    .meio div h1 {
-        font-size: 11pt;
-    }
-
-    .botoes button{
-        font-size: 9pt;
-        height: 40px;
-    }
-
-/*************** Meio End **************/
-
-/*************** Devs Start **************/
-
-    .devs {
-        display: block;
-        height: auto;
-        align-items: center;
-        margin: auto;
-    }
-
-    .devs div {
-        height: auto;
-    }
-
-    .devs2 {
-        border-radius: 30px;
-        width: 60vw;
-    }
-
-
-/*************** Devs End **************/
-
-/*************** Form Page Start **************/
-
-
-    .formu {
-        display: block;
-    }
-    .formFormat {
-        display: block;
-        margin: 10px;
-        text-align: center;
-    }
-    .formFormat2 {
-        display: block;
-        float: left;
-        margin: 10px;
-        text-align: center;
-    }
-
-/*************** Form Page End **************/
-
 
 }
 
