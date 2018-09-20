@@ -5,9 +5,15 @@
     width: 20vh;
     margin-top: 10px;
 }
+.CAPA{
+    margin-top: -20px;
+    height: 13vh;
+    background-color:  rgba(112, 70, 149, 1);
+}
+
 
 .VazioSup {
-    height: 40vh;
+    height: 50vh;
     background-color: lightseagreen;
     display: flex;
     align-items: center;
@@ -30,7 +36,7 @@
     height: 15vw;
     display: flex;
     align-items: center;
-    background-color: rgba(112, 70, 149, 0.7);  
+    background-color: rgba(112, 70, 149);  
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
@@ -38,10 +44,21 @@
 
 }
 .navega a{
+    text-decoration: none;
     font-size: 20px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
+}
+.navega button{
+    border: none;
+   background-color: rgba(112, 70, 149);
+   color: white;
+   font-size: 16pt
+}
+.grade2{
+    visibility: hidden;
+    margin-top: -142vh;
 }
 .jobC{
     display: flex;
