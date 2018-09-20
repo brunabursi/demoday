@@ -188,6 +188,10 @@ aside li a{
     overflow: hidden;
 }
 
+#panel div p {
+    color: #3d3d3d;
+}
+
 .accordion {
     cursor: pointer;
     transition: 0.4s;
@@ -323,6 +327,10 @@ footer {
         padding: 2px 10px;
         color: white;
         font-family: 'Quicksand', sans-serif;
+    }
+
+    aside {
+        z-index: -1;
     }
 
     .divLogin {
@@ -544,41 +552,55 @@ footer {
     margin: 60px auto;
 }
 
-.devs img {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-}
+    .devs img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
 
-.devsImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
+    .devsImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
 
-.devs div {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 0vw;
-    height: 17vh;
-}
-.devs div h1 {
-    margin: 0;
-    font-size: 13pt;
-}
+    .devs div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0vw;
+        height: 17vh;
+    }
+    .devs div h1 {
+        margin: 0;
+        font-size: 13pt;
+    }
 
-.devs div p {
-    font-size: 9pt;
-    text-align: center;
-}
+    .devs div p {
+        font-size: 9pt;
+        text-align: center;
+    }
 
-.devs2{
-    width: 100%;
-    background-color: rgba(112, 70, 149, 0.7);
-}
+    .devs2{
+        width: 100%;
+        background-color: rgba(112, 70, 149, 0.7);
+    }
 /*************** Devs Section End **************/
+
+/*************** Footer Section Start **************/
+
+footer {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: rgba(112, 70, 149);
+}
 
 }
 
