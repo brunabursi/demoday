@@ -5,6 +5,8 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('/static/img/bgimg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*************** Header Start ***************/
@@ -163,17 +165,16 @@ aside li a{
 }
 
 .botoes button {
-    width: 45%;
-    height: 40px;
+    width: 47%;
+    height: 50px;
     border-radius: 60px;
     border: none;
     background: rgba(255, 255, 255, 0.7);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 9pt;
-    color: white;
+    font-size: 14pt;
     font-family: 'Quicksand', sans-serif;
     color: rgba(112, 70, 149);
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .botoes button:hover {
@@ -207,9 +208,9 @@ aside li a{
     padding: 10px 0;
     color: white;
     font-family: 'Quicksand', sans-serif; 
-    margin: auto;
-    width: 92vw;
-    height: auto;
+    margin: 10vh auto;
+    width: 100vw;
+    height: 10vh auto;
     align-items: center;
 }
 
@@ -256,12 +257,12 @@ aside li a{
 
 footer {
     display: flex;
-    position: relative;
+    position: inherit;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     width: 100%;
-    margin-bottom: 0px;
+    bottom: 0px;
     background-color: rgba(112, 70, 149);
     text-decoration: none;
     color: white;
@@ -570,7 +571,7 @@ footer {
         flex-direction: column;
         text-align: center;
         margin-top: 0vw;
-        height: 17vh;
+        height: 33vh;
     }
     .devs div h1 {
         margin: 0;
@@ -580,6 +581,11 @@ footer {
     .devs div p {
         font-size: 9pt;
         text-align: center;
+    }
+
+    .devs img {
+        height: 80px;
+        width: 80px;
     }
 
     .devs2{
@@ -592,7 +598,7 @@ footer {
 
 footer {
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     height: 100px;
@@ -601,6 +607,53 @@ footer {
     margin-bottom: 0;
     background-color: rgba(112, 70, 149);
 }
+
+}
+
+@media (min-width: 1270px) {
+
+    header  {
+        height: 170px;
+    }
+
+    header a {
+        font-size: 18pt;
+    }
+
+    .meio div {
+        width: 55vw;
+        margin: 135px auto;
+        justify-content: space-between;
+    }
+
+    .meio div h1 {
+        font-size: 45pt;
+    }
+
+    .devs {
+        width: 100vw;
+    }
+
+    .devs div {
+        height: 52vh;
+    }
+
+    .devs img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .devs div h1 {
+        font-size: 25pt;
+    }
+
+    .devs div p {
+        font-size: 20pt;
+    }
+
+    .botoes button {
+        height: 100px;
+    }
 
 }
 
