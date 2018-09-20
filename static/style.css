@@ -16,12 +16,12 @@ body {
 }
 
 .invisivel {
-        visibility: hidden;
-    }
+    visibility: hidden;
+}
 
 header {
     display: block;
-    position: absolute;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     height: 100px;
@@ -40,9 +40,12 @@ header div {
     width: 300px;
 }
 
-header img {
+.logo {
     width: 60px;
     height: 60px;
+    position: relative;
+    align-items: center;
+    margin: auto;
 }
 
 header div a {
@@ -62,6 +65,7 @@ aside {
   justify-content: left;
   position: absolute;
   left: 0;
+  top: 0;
   transform: translateX(0);
   transition: 1s;
 }
@@ -86,11 +90,13 @@ aside ul a {
     font-family: 'Quicksand', sans-serif;
 }
 aside h2 {
-    margin-left: 30px;
+    margin-left: 90px;
     color: white;
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-
+aside li a{
+    font-size: 20pt;
+}
 #hamburger {
     width: 60px;
     height: 60px;
@@ -130,7 +136,8 @@ aside h2 {
     color: white;
     font-family: 'Quicksand', sans-serif;
     width: 90vw;
-    margin: 40px 0;
+    margin: 40px auto;
+    text-align: center;
 }
 
 .meio div h1 {
@@ -138,12 +145,12 @@ aside h2 {
     display: flex;
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-size: 11pt;
+    font-size: 15pt;
     justify-content: center;
 }
 
 .meio {
-    margin-top: 15vh !important;
+    margin-top: 10vh !important;
 }
 
 
@@ -172,6 +179,18 @@ aside h2 {
 .botoes button:hover {
     cursor: pointer;
     background-color: rgba(36, 32, 56, 0.5);
+}
+
+#panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion {
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 /*************** Meio End **************/
@@ -223,12 +242,28 @@ aside h2 {
 .devs2{
     width: 100%;
     background-color: rgba(112, 70, 149, 0.7);
-    border-radius: 30px;
     width: 60vw;
 }
 
 
 /*************** Devs End **************/
+
+/*************** Footer Start **************/
+
+footer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 0px;
+    background-color: rgba(112, 70, 149);
+    text-decoration: none;
+    color: white;
+}
+
+/*************** Footer End **************/
 
 /*************** Form Page Start **************/
 
@@ -252,14 +287,14 @@ aside h2 {
 
 
 
-/*************** Mobile Version 700px Start **************/
+/*************** Desktop Version 900px Start **************/
 
 
 @media (min-width: 900px) {
 
     header {
         display: flex;
-        position: absolute;
+        position: relative;
         justify-content: space-between;
         align-items: center;
         height: 100px;
@@ -436,7 +471,7 @@ aside h2 {
         color: white;
         font-family: 'Quicksand', sans-serif;
         width: 90vw;
-        margin: 40px 0;
+        margin: 40px auto;
     }
 
     .meio div h1 {
@@ -491,21 +526,22 @@ aside h2 {
     }
 
     .meioIdeia {
-     background-color: rgba(112, 70, 149, 0.7);
- }
+       background-color: rgba(112, 70, 149, 0.7);
+   }
 
- /*************** Idea Section End **************/
+   /*************** Idea Section End **************/
 
- /*************** Devs Section Start **************/
+   /*************** Devs Section Start **************/
 
- .devs {
+   .devs {
     display: flex;
     position: relative;
-    padding: 10px 0;
+    padding: 20px 0;
     color: white;
     font-family: 'Quicksand', sans-serif; 
     margin: 10px 0 30vh 0;
     width: 92vw;
+    margin: 60px auto;
 }
 
 .devs img {
@@ -526,7 +562,7 @@ aside h2 {
     flex-direction: column;
     text-align: center;
     margin-top: 0vw;
-    height: 15vh;
+    height: 17vh;
 }
 .devs div h1 {
     margin: 0;
