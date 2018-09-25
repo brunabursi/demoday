@@ -73,13 +73,27 @@ aside {
     transform: translateX(0);
     transition: 0.5s;
 }
+
 aside.mostrando {
     background-color: rgba(112, 70, 149);
     transform: translateX(0);
     width: 80%;
     z-index: 1;
     transition: 0.5s;
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+    
+    visibility: hidden;
 }
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 aside ul {
     margin-top: 50px;
     display: flex;
@@ -89,7 +103,7 @@ aside ul {
 }
 aside ul a {
     text-decoration: none;
-    font-size: 10pt;
+    font-size: 10 pt;
     margin-left: 20px;
     color: white;
     font-family: 'Quicksand', sans-serif;

@@ -13,7 +13,16 @@ botao.onclick = function(){
             item.classList.toggle("invisivel");
         }
     }
+    lateral.classList.toggle("mostrandoB");
+
+    for(item of lateral.children){
+        if(item.id !== "hamburger"){
+            
+            item.classList.toggle("invisivelB");
+        }
+    }
 }
+
 
 let link2 = document.querySelector("#BotaoDois");
 let primeiraAba = document.getElementsByClassName(".grade2");
@@ -34,6 +43,6 @@ function Grade2() {
     x.getElementsByClassName("grade")[0].style.visibility = "hidden";
     x.getElementsByClassName("grade")[1].style.visibility = "visible";
 
-    x.getElementsByClassName("grade")[1].style.marginTop = "-92vh";
+    x.getElementsByClassName("grade")[1].style.marginTop = "-89vh";
 }
 
