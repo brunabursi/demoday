@@ -1,14 +1,13 @@
 let info = document.querySelector('#panel');
 let devs = document.querySelector('.devs');
-let footer = document.querySelector('footer');
 
-function showInfo() {
-    if (info.style.display === "none") {
+function myFunction() {
+    if (info.style.display === "none" || info.style.display === ""){
         info.style.display = "block";
-        footer.style.position = "inherit";
+        devs.style.position = "relative";
     } else {
         info.style.display = "none";
-        devs.style.position = "relative";
-        footer.style.position = "absolute";
+        devs.style.position = "absolute";
     }
 }
+

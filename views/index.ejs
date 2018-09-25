@@ -8,24 +8,28 @@
 <body>
     <!-- Header Section -->
     <header>
-        <div class="desktop">
-            <a id="QS" href="/usu">Quem somos</a>
-            <span class="barra">|</span>
-            <a href="">Contato</a>
-        </div>
-        <div>
-            <img class="logo" src="/static/img/logo.png" alt="logo">
-        </div>
-        <div class="desktop divLogin">
-            <a href="/form">Sign Up</a>
-            <span class="barra">|</span>
-            <a href="">Login</a>
-        </div>
+
+        <section class="full">
+            <div>
+                <a id="QS" href="/usu">Quem somos</a>
+                <span class="barra">|</span>
+                <a href="">Contato</a>
+            </div>
+            <div>
+                <img class="logo" src="/static/img/logo.png" alt="logo">
+            </div>
+            <div>
+                <a href="/form">Sign Up</a>
+                <span class="barra">|</span>
+                <a href="">Login</a>
+            </div>
+        </section>
+
     </header>
-
+    
     <!-- SideBar section -->
-
-
+    
+    
     <aside>
         <div id="hamburger">
             <div class="barrinha"></div>
@@ -40,78 +44,80 @@
             <li> <a href="">Login</a></li>
         </ul>
     </aside>
-
-    <!-- Middle Section -->
-
-    <section class="meio">
-        <div>
-            <h1>Conecte sua empresa com um desenvolvedor</h1>
-        </div>
-
-        <div class="botoes center">
-            <button onclick="showInfo()" class="accordion">Qual a ideia?</button>
-        </div>
-
-        <div id="panel">
-
+    
+    <!-- Middle Section -->    
+    <section  id="ideia"> 
+        
+        <section class="meio">
             <div>
-                <img src="" alt="Setinhas">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur perferendis praesentium! At qui consequuntur tempora vitae sit eveniet laboriosam dignissimos ea porro ipsum quibusdam ex repellendus, error necessitatibus doloribus.</p>
+                <h1>Conecte sua empresa com um profissional junior</h1>
             </div>
-            <span>ººº</span>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur perferendis praesentium! At qui consequuntur tempora vitae sit eveniet laboriosam dignissimos ea porro ipsum quibusdam ex repellendus, error necessitatibus doloribus.</p>
-                <img src="" alt="Cabeça">
+            
+            <div class="btn">
+                
+                <div>
+                    <button onclick="myFunction()" class="accordion">Qual a ideia?</button>
+                </div>      
+                
+                <div id="panel">
+                    
+                    <div>
+                        <img src="" alt="Setinhas">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur perferendis praesentium! At qui consequuntur tempora vitae sit eveniet laboriosam dignissimos ea porro ipsum quibusdam ex repellendus, error necessitatibus doloribus.</p>
+                    </div>
+                    <span>ººº</span>
+                    <div>
+                        <img src="" alt="Cabeça">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur perferendis praesentium! At qui consequuntur tempora vitae sit eveniet laboriosam dignissimos ea porro ipsum quibusdam ex repellendus, error necessitatibus doloribus.</p>
+                    </div>
+                    
+                </div>                
+                <div>
+                    <button>Empresas</button>
+                    
+                    <button>Profissionais</button>
+                </div>            
             </div>
-
-        </div>
-
-        <div class="botoes">
-            <button>Empresas</button>
-            <button>Profissionais</button>
-        </div>
+        </section>
     </section>
 
     <!-- Devs Section -->
-
-    <div class="devs">
-        <div class="devs2">
+    
+    <section class="devs">        
+        <div>
             <div class="devsImg">
                 <img src="../static/img/Bru.jpeg" alt="Foto">
             </div>
             <h1>Bruna</h1>
-            <p><i>"Através da plataforma consegui <br>
-            material para o meu portfólio"</i></p>
-        </div class="devs2">
-        <div class="devs2">
+            <p>"Através da plataforma consegui material para o meu portfólio"</p>
+        </div>
+        <div>
             <div class="devsImg">
                 <img src="../static/img/Mat.jpeg" alt="Foto">
             </div>
             <h1>Matheus</h1>
-            <p><i>"Através da plataforma consegui <br>
-            material para o meu portfólio"</i></p>
+            <p>"Através da plataforma consegui material para o meu portfólio"</p>
         </div>
-        <div class="devs2">
+        <div>
             <div class="devsImg">
                 <img src="../static/img/Sam.jpeg" alt="Foto">
             </div>
             <h1>Samuel</h1>
-            <p><i>"Através da plataforma consegui <br>
-            material para o meu portfólio"</i></p>
+            <p>"Através da plataforma consegui material para o meu portfólio"</p>
         </div>
-    </div>
-
+    </section>
+    
     <!-- Footer Section -->
-
-    <footer>
-        <div>
-            <img class="logo" src="/static/img/logo.png" alt="logo">
-        </div>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam </p>
-        </div>
-    </footer>
-
-</body>
-
-</html>
+    <!-- 
+        <footer>
+            <div>
+                <img class="logo" src="/static/img/logo.png" alt="logo">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam </p>
+            </div>
+        </footer> -->
+        
+    </body>
+    
+    </html>

@@ -1,19 +1,20 @@
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     margin: 0;
     padding: 0;
     background-image: url('/static/img/bgimg.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /*************** Header Start ***************/
 
 /*************** Barra Lateral Start**************/
 
-.desktop {
+.full {
     visibility: hidden;
 }
 
@@ -22,7 +23,7 @@ body {
 }
 
 header {
-    display: block;
+    display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
@@ -34,12 +35,22 @@ header {
     color: white;
 }
 
-header div {
+header div{
     margin: 0 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 300px;
+    width: 241px;
+}
+
+header div a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 15px;
+}
+div a:hover{    
+    background-color: black;
+    border-radius: 10px;
 }
 
 .logo {
@@ -50,30 +61,21 @@ header div {
     margin: auto;
 }
 
-header div a {
-    text-decoration: none;
-    padding: 2px 10px;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-}
-.divLogin {
-    width: 200px;
-}
-
 aside {
-  height: 100%;
-  width: 80%;
-  flex-direction: column;
-  justify-content: left;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translateX(0);
-  transition: 1s;
+    height: 100%;
+    width: 10%;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    transition: 1s;
 }
 aside.mostrando {
     background-color: rgba(112, 70, 149);
     transform: translateX(0);
+    width: 80%;
     z-index: 1;
     transition: 1s;
 }
@@ -127,91 +129,90 @@ aside li a{
     justify-content: center !important;
 }
 
-
 /*************** Middle Section Start **************/
-
-.meio div {
+.meio{
     display: flex;
-    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-around;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    width: 90vw;
-    margin: 40px auto;
+    width: 100%;
+    position: static;    
+    margin: 0 0 40px;
+}
+
+.meio div h1{
     text-align: center;
-}
-
-.meio div h1 {
-    width: 80vw;
-    display: flex;
-    letter-spacing: 3px;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: 15pt;
-    justify-content: center;
+    font-size: 1.3em;
+    width: fit-content;
+    max-width: 374px;
+    color: white;
 }
 
-.meio {
-    margin-top: 10vh !important;
-}
-
-
-.botoes {
+.btn div{
     display: flex;
-    position: relative;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-between;
-    width: 80vw;
+    padding: 1em 0;
+    width: 100vw;
 }
 
-.botoes button {
-    width: 47%;
-    height: 50px;
-    border-radius: 60px;
-    border: none;
-    background: rgba(255, 255, 255, 0.7);
-    font-size: 14pt;
+.btn button{
+    min-width: fit-content;
+    width: 45vw;
+    height: 8vh;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: rgb(245, 245, 245, 0.9);
     font-family: 'Quicksand', sans-serif;
-    color: rgba(112, 70, 149);
     text-transform: uppercase;
     font-weight: bold;
+    color: rgba(112, 70, 149);
 }
 
-.botoes button:hover {
-    cursor: pointer;
-    background-color: rgba(36, 32, 56, 0.5);
+button:hover{
+    background-color: rgba(112, 70, 149, 0.7);
+    color: white;
+    cursor: pointer;    
 }
 
-#panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-}
 
-#panel div p {
-    color: #3d3d3d;
-}
-
+/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     cursor: pointer;
     transition: 0.4s;
 }
 
-/*************** Meio End **************/
+/* Style the accordion panel. Note: hidden by default */
+
+#panel {
+    padding: 0 18px;
+    background-color: rgba(245, 245, 245, 0.9);
+    display: none;
+}
+
+#panel div{
+    display: block;
+}
+
+/*************** Meio End *************/
+
+
 
 /*************** Devs Start **************/
 
 .devs {
     display: flex;
-    position: relative;
-    padding: 10px 0;
     color: white;
-    font-family: 'Quicksand', sans-serif; 
-    margin: 10vh auto;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(112, 70, 149, 0.7);
+    justify-content: space-evenly;
+    padding: 10px 0;
+    height: 20vh;
     width: 100vw;
-    height: 10vh auto;
-    align-items: center;
+    position: absolute;
+    bottom: 0;
 }
 
 .devs img {
@@ -232,7 +233,7 @@ aside li a{
     flex-direction: column;
     text-align: center;
     margin-top: 0vw;
-    height: auto;
+    height: 15vh;
 }
 .devs div h1 {
     margin: 0;
@@ -243,14 +244,6 @@ aside li a{
     font-size: 9pt;
     text-align: center;
 }
-
-.devs2{
-    width: 100%;
-    background-color: rgba(112, 70, 149, 0.7);
-    width: 60vw;
-}
-
-
 /*************** Devs End **************/
 
 /*************** Footer Start **************/
@@ -296,303 +289,124 @@ footer {
 
 
 @media (min-width: 900px) {
-
-    header {
+    
+    aside{
+        display: none;
+    }
+    
+    .full{
         display: flex;
-        position: relative;
-        justify-content: space-between;
         align-items: center;
-        height: 100px;
         width: 100%;
-        margin: auto;
-        background-color: rgba(112, 70, 149, 0.7);
-        text-decoration: none;
-        color: white;
-    }
-
-    header div {
-        margin: 0 10px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 300px;
-    }
-
-    header img {
-        width: 60px;
-        height: 60px;
-    }
-
-    header div a {
-        text-decoration: none;
-        padding: 2px 10px;
-        color: white;
-        font-family: 'Quicksand', sans-serif;
-    }
-
-    aside {
-        z-index: -1;
-    }
-
-    .divLogin {
-        width: 200px;
-    }
-
-    .desktop {
+        justify-content: space-between;
         visibility: visible;
     }
-
-    #hamburger {
-        visibility: hidden !important;
+    
+    .btn{
+        width: 100vw;
     }
 
-    /*************** Header End *************/
-
-    /*************** Form Start *************/
-
-    .formu {
+    .btn button{
+        height: 9vh;
+        width: 20vw;
+    }
+    
+    .meio div h1{
+        font-size: xx-large;
+        width: fit-content;
+        max-width: 669px;
+    }   
+    
+    #panel div{
         display: flex;
-        justify-content: space-around;
-        position: relative;
-        font-family: 'Quicksand', sans-serif;
-        margin: 0 auto auto auto;
     }
-
-    .formFormat {
-        display: inline-flex;
-        flex-direction: column;
-        margin: 10px;
-        text-align: center
-    }
-
-    .formFormat p {
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-    }
-
-    .formFormat2 {
-        display: inline-flex;
-        flex-direction: column;
-        margin: 10px;
-        right: 10px;
-        text-align: center
-    }
-
-    .formFormat2 p {
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-    }
-
-    .formFormat input {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 20px;
-        border: 0;
-        border-radius: 25px;
-        width: 300px;
-        height: 30px;
-        background-color: rgba(112, 70, 149, 0.7);
-        border: 1px solid;
-        padding: 10px;
-    }
-
-    .formFormat2 input {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 20px;
-        border: 0;
-        border-radius: 25px;
-        width: 300px;
-        height: 30px;
-        background-color: rgba(112, 70, 149, 0.7);
-        border: 1px solid;
-        padding: 10px;
-    }
-
-    .formFormat input::placeholder {
-        color: white;
-        padding-left: 10px;
-        font-size: 13pt;
-    }
-
-    .formFormat2 input::placeholder {
-        color: white;
-        padding-left: 10px;
-        font-size: 13pt;
-    }
-
-    /*************** Form End *************/
-
-    /***************  Invisivel menu lateral para versao desktop Start ***********/
-
-    .invisivel {
-        visibility: hidden;
-    }
-
-    /***************  Invisivel menu lateral para versao desktop End ***********/
-
-    /***************  Buttons Start ****************/
-
-    .botoes {
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: space-between;
-        width: 80vw;
-    }
-
-    .botoes button {
-        width: 45%;
-        height: 70px;
-        border-radius: 60px;
-        border: none;
-        background: rgba(255, 255, 255, 0.7);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 27px;
-        color: white;
-        font-family: 'Quicksand', sans-serif;
-        color: rgba(112, 70, 149);
-        text-transform: uppercase;
-    }
-
-    .botoes button:hover {
-        cursor: pointer;
-        background-color: rgba(36, 32, 56, 0.5);
-    }
-
-    /***************  Buttons End ****************/
-
-
-    .center {
-        justify-content: center !important;
-    }
-
-
-    /*************** Middle Section Start **************/
-
-    .meio div {
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: space-around;
-        color: white;
-        font-family: 'Quicksand', sans-serif;
-        width: 90vw;
-        margin: 40px auto;
-    }
-
-    .meio div h1 {
-        width: 80vw;
-        display: flex;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        font-size: 30pt;
-        justify-content: center;
-    }
-
-    /*************** Middle Section End **************/
-
-    /*************** Idea Section Start **************/
-
-
-    .ideia {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 10px 0;
-        color: white;
-        font-family: 'Quicksand', sans-serif;
-
-    }
-
-    .ideia h1 {
-        margin: 0;
-        background: rgba(112, 70, 149, 0.7);
-        border-radius: 0px 0px 0px 0px;
-        padding: 5px;
-    }
-
-    .ideia span {
-        margin: 0;
-        width: 80%;
-        text-align: center;
-        padding: 5px;
-    }
-
-    .ideia div {
-        width: 0%;
-        display: flex;
-        text-align: justify;
-        border-radius: 10px 0px 10px 0px;
-        padding: 5px;
-    }
-
-    .ideia:nth-child(4) {
-        border-radius: 0 0 10px 10px;
-    }
-
-    .meioIdeia {
-       background-color: rgba(112, 70, 149, 0.7);
-   }
-
-   /*************** Idea Section End **************/
-
-   /*************** Devs Section Start **************/
-
-   .devs {
-    display: flex;
-    position: relative;
-    padding: 20px 0;
-    color: white;
-    font-family: 'Quicksand', sans-serif; 
-    margin: 10px 0 30vh 0;
-    width: 92vw;
-    margin: 60px auto;
 }
 
-    .devs img {
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-    }
+/*************** Form Start *************/
 
-    .devsImg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10px;
-    }
+.formu {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0 auto auto auto;
+}
 
-    .devs div {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 0vw;
-        height: 33vh;
-    }
-    .devs div h1 {
-        margin: 0;
-        font-size: 13pt;
-    }
+.formFormat {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center
+}
 
-    .devs div p {
-        font-size: 9pt;
-        text-align: center;
-    }
+.formFormat p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
 
-    .devs img {
-        height: 80px;
-        width: 80px;
-    }
+.formFormat2 {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px;
+    right: 10px;
+    text-align: center
+}
 
-    .devs2{
-        width: 100%;
-        background-color: rgba(112, 70, 149, 0.7);
-    }
-/*************** Devs Section End **************/
+.formFormat2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.formFormat input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    border: 0;
+    border-radius: 25px;
+    width: 300px;
+    height: 30px;
+    background-color: rgba(112, 70, 149, 0.7);
+    border: 1px solid;
+    padding: 10px;
+}
+
+.formFormat2 input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    border: 0;
+    border-radius: 25px;
+    width: 300px;
+    height: 30px;
+    background-color: rgba(112, 70, 149, 0.7);
+    border: 1px solid;
+    padding: 10px;
+}
+
+.formFormat input::placeholder {
+    color: white;
+    padding-left: 10px;
+    font-size: 13pt;
+}
+
+.formFormat2 input::placeholder {
+    color: white;
+    padding-left: 10px;
+    font-size: 13pt;
+}
+
+/*************** Form End *************/
+
+/***************  Invisivel menu lateral para versao desktop Start ***********/
+
+.invisivel {
+    visibility: hidden;
+}
+
+/***************  Invisivel menu lateral para versao desktop End ***********/
+
 
 /*************** Footer Section Start **************/
 
@@ -611,49 +425,49 @@ footer {
 }
 
 @media (min-width: 1270px) {
-
+    
     header  {
         height: 170px;
     }
-
+    
     header a {
         font-size: 18pt;
     }
-
+    
     .meio div {
         width: 55vw;
         margin: 135px auto;
         justify-content: space-between;
     }
-
+    
     .meio div h1 {
         font-size: 45pt;
     }
-
+    
     .devs {
         width: 100vw;
     }
-
+    
     .devs div {
         height: 52vh;
     }
-
+    
     .devs img {
         height: 150px;
         width: 150px;
     }
-
+    
     .devs div h1 {
         font-size: 25pt;
     }
-
+    
     .devs div p {
         font-size: 20pt;
     }
-
+    
     .botoes button {
         height: 100px;
     }
-
+    
 }
 
