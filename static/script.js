@@ -3,11 +3,21 @@ let devs = document.querySelector('.devs');
 
 function myFunction() {
     if (info.style.display === "none" || info.style.display === ""){
-        info.style.display = "block";
-        devs.style.position = "relative";
+        info.style.display = "flex";
     } else {
-        info.style.display = "none";
-        devs.style.position = "absolute";
-    }
+        info.style.display = "none";    }
 }
+
+let usuario = document.querySelector('#usuario');
+let empresa = document.querySelector('#enterprise');
+
+usuario.addEventListener('click', ()=>{
+    window.location.href='usu';
+}
+)
+
+empresa.addEventListener('click', ()=>{
+    window.location.href='enterprise';
+}
+)
 

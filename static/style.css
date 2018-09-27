@@ -145,6 +145,8 @@ aside li a{
 }
 
 /*************** Middle Section Start **************/
+
+
 .meio{
     display: flex;
     flex-direction: column;
@@ -153,7 +155,7 @@ aside li a{
     width: 100%;
     position: static;    
     margin: 0 0 40px;
-    height: 60vh;
+    height: fit-content;
 }
 
 .meio div h1{
@@ -163,6 +165,13 @@ aside li a{
     font-size: 1.5em;
     width: fit-content;
     color: white;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn div{
@@ -184,6 +193,7 @@ aside li a{
     text-transform: uppercase;
     font-weight: bold;
     color: rgba(112, 70, 149);
+
 }
 
 button:hover{
@@ -202,9 +212,11 @@ button:hover{
 /* Style the accordion panel. Note: hidden by default */
 
 #panel {
-    padding: 0 18px;
     background-color: rgba(245, 245, 245, 0.9);
     display: none;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 #panel div{
@@ -226,8 +238,6 @@ button:hover{
     padding: 10px 0;
     height: 20vh;
     width: 100vw;
-    position: absolute;
-    bottom: 0;
 }
 
 .devs img {
@@ -332,6 +342,10 @@ footer {
         font-size: 2.5em !important;
     }   
     
+    #panel{
+    width: 70vw;
+    }
+
     #panel div{
         display: flex;
     }
