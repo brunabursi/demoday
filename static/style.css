@@ -278,15 +278,18 @@ footer {
     bottom:0;
     height: fit-content;
     width: 100%;
-    background-color: rgba(112, 70, 149);
+    background-color:black;
 }
 
 footer div{
+
+    
     text-align: justify;
     padding: 5px;
 }
 
 footer div a{
+    font-size: 9pt;
     text-decoration: none;
     color: white;
     padding: 2px 7px;

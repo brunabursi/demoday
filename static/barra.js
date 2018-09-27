@@ -1,4 +1,4 @@
-/*fução para mover a barra lateral*/
+﻿/*fução para mover a barra lateral*/
 
 let botao = document.querySelector("#hamburger");
 let lateral = document.querySelector("aside");
@@ -46,3 +46,10 @@ function Grade2() {
     x.getElementsByClassName("grade")[1].style.marginTop = "-89vh";
 }
 
+function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
+}

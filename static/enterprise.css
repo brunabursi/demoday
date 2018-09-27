@@ -1,4 +1,41 @@
+body {
+	font-family: "Lato", sans-serif;
+}
 
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0px;
+	left: 0;
+	background-color: rgba(112, 70, 149);;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	display: block;
+	transition: 0.5s;
+}
+
+
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
 .perfil img{
     border-radius: 50%;
     height: 20vh;
@@ -6,13 +43,14 @@
     margin-top: 10px;
 }
 .CAPA{
-    margin-top: -20px;
+    margin-top: -3vh;
     height: 13vh;
     background-color:  rgba(112, 70, 149, 1);
 }
 
 
 .VazioSup {
+	
     height: 50vh;
     background-color: lightseagreen;
     display: flex;
