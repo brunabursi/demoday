@@ -355,7 +355,14 @@ footer div a{
     #panel div{
         display: flex;
     }
+
+    footer{
+        position: unset;
+    }
+
 }
+
+
 
 /*************** Form Start *************/
 
