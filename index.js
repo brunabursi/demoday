@@ -30,8 +30,14 @@ app.get('/enterprise',(req,res)=>{
 app.get('/loginUsu',(req,res)=>{
     res.render('loginUsu');
 });
+app.get('/loginEnt',(req,res)=>{
+    res.render('loginEnt');
+});
 app.get('/login',(req,res)=>{
     res.render('login');
+});
+app.get('/quemSomos',(req,res)=>{
+    res.render('quemSomos');
 });
 
 app.post('/form',(req,res)=>{
