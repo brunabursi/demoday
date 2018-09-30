@@ -27,8 +27,11 @@ app.get('/usu',(req,res)=>{
 app.get('/enterprise',(req,res)=>{
     res.render('enterprise');
 });
-app.get('/quemSomos',(req,res)=>{
-    res.render('quemSomos');
+app.get('/loginUsu',(req,res)=>{
+    res.render('loginUsu');
+});
+app.get('/login',(req,res)=>{
+    res.render('login');
 });
 
 app.post('/form',(req,res)=>{

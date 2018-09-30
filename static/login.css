@@ -1,0 +1,78 @@
+
+
+.login-box {
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 28vh;
+    position: fixed;
+  top: 50%;
+  left: 49%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+    background-color: rgba(112, 70, 149, 0.9);
+    padding: 8px;
+   
+
+
+}
+.login-box h1{
+    font-family: 'Quicksand', sans-serif;
+    color: white
+    float: left
+    font-size: 40px;
+    magin-bottom: 50px;
+    padding 13px;
+   text-aling: center;
+}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    
+    margin: 0px 0px 30px;
+
+}
+.textbox input{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+.lbtn {
+    text-decoration: none;
+    padding: 2px
+
+    width: 20vw;
+    height: 7vh;
+    border-radius: 15px;
+    align-content: center;
+    background-color: rgb(245, 245, 245, 0.9);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black
+}
+.lbtn a{
+    position: relative;
+    top: 15px;
+    right: -60px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.CAPA2{
+    position: fixed;
+    top: 50%;
+}
+@media (min-width: 400px) {
+    .login-box {
+      
+        position: fixed;
+        top: 50%;
+        left: 47%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+      
+    
+    }
+}
