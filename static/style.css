@@ -292,100 +292,9 @@ footer div a{
 /*************** Footer End **************/
 
 /*************** Form Page Start **************/
-
-
-.formu {
-    display: block;
-}
-.formFormat {
-    display: block;
-    margin: 10px;
-    text-align: center;
-}
-.formFormat2 {
-    display: block;
-    float: left;
-    margin: 10px;
-    text-align: center;
-}
-
-/*************** Form Page End **************/
-
-
-
-/*************** Desktop Version 900px Start **************/
-
-
-@media (min-width: 900px) {
-    
-    aside{
-        display: none;
-    }
-    
-    .full{
-        display: flex;
-        align-items: center;
-        width: 100vw;
-        justify-content: space-between;
-        visibility: visible;
-        flex-direction: column;
-    }
-    header div{
-        margin: 5px 0;
-    }
-    
-    header div h1{
-        margin: 0;
-    }
-
-    header div a{
-        text-decoration: none;
-        color: white;
-        padding: 3px 15px;
-    }
-
-    #login{
-        font-size: small;
-        justify-content: flex-end;
-    }
-
-
-    .btn{
-        width: 100vw;
-    }
-
-    .btn button{
-        height: 9vh;
-        width: 35vw;
-    }
-    
-    .meio div h1{
-        width: fit-content;
-        max-width: 669px;
-        font-size: 2.5em !important;
-    }   
-    
-    #panel{
-    width: 70vw;
-    }
-
-    #panel div{
-        display: flex;
-    }
-
-    footer{
-    position: relative;
-    bottom: 0;
-    }
-
-}
-
-
-
-/*************** Form Start *************/
-
 .formu {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     position: relative;
     font-family: 'Quicksand', sans-serif;
@@ -458,6 +367,78 @@ footer div a{
 }
 
 /*************** Form End *************/
+
+
+/*************** Desktop Version 900px Start **************/
+
+
+@media (min-width: 900px) {
+    
+    aside{
+        display: none;
+    }
+    
+    .full{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        justify-content: space-between;
+        visibility: visible;
+        flex-direction: column;
+    }
+    header div{
+        margin: 5px 0;
+    }
+    
+    header div h1{
+        margin: 0;
+    }
+
+    header div a{
+        text-decoration: none;
+        color: white;
+        padding: 3px 15px;
+    }
+
+    #login{
+        font-size: small;
+        justify-content: flex-end;
+    }
+
+
+    .btn{
+        width: 100vw;
+    }
+
+    .btn button{
+        height: 9vh;
+        width: 35vw;
+    }
+    
+    .meio div h1{
+        width: fit-content;
+        max-width: 669px;
+        font-size: 2.5em !important;
+    }   
+    
+    #panel{
+    width: 70vw;
+    }
+
+    #panel div{
+        display: flex;
+    }
+
+    footer{
+    position: relative;
+    bottom: 0;
+    }
+
+    .formu{
+        flex-direction: row;
+    }
+
+}
 
 /***************  Invisivel menu lateral para versao desktop Start ***********/
 
