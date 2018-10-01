@@ -7,20 +7,20 @@
 </head>
 
 <body>
-       
+    
     <header>
         <%-include('shared/menu')%>
     </header>
-
+    
 	<div id="mySidenav" class="sidenav">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="#">Quem somos</a>
-	  <a href="#">Contato</a>
-	  <a href="#">Configurações</a>
-	  <a href="/">Sair</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Quem somos</a>
+        <a href="#">Contato</a>
+        <a href="#">Configurações</a>
+        <a href="/">Sair</a>
 	</div>
 	<span style="font-size:30px;cursor:pointer" onclick="openNav()">
-	 <div id="hamburger">
+        <div id="hamburger">
             <div class="barrinha"></div>
             <div class="barrinha"></div>
             <div class="barrinha"></div>
@@ -30,17 +30,17 @@
         <div class="login-box">
             <h1>Login</h1>
             <div class="lbtn">
-                    <a href="/loginEnt">Empresa</a>
+                <a href="/loginEnt">Empresa</a>
             </div>
-        
+            
             <div class="lbtn">
-                    <a href="/loginUsu">Usuário</a>
+                <a href="/loginUsu">Usuário</a>
             </div>
         </div>
-       
-	</section>
-	
-   
+        
+    </section>
+    
+    <%-include('shared/footer')%> 
 	
 </body>
 

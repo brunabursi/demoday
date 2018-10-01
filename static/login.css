@@ -25,6 +25,7 @@
     padding 13px;
    text-aling: center;
 }
+
 .textbox{
     width: 100%;
     overflow: hidden;
@@ -75,4 +76,11 @@
       
     
     }
+}
+
+@media (min-width:900px){
+    footer{
+        position: relative;
+        bottom: 0;
+        }    
 }

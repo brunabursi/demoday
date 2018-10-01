@@ -1,0 +1,6 @@
+@media (min-width:900px){
+    footer{
+        position: relative;
+        bottom: 0;
+        }    
+}
