@@ -10,3 +10,8 @@
 .desc p{
 	text-align: justify;
 }
+
+footer{
+	position: fixed;
+	bottom: 0;
+}

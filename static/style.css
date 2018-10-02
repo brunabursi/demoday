@@ -216,6 +216,10 @@ button:hover{
     display: block;
 }
 
+#panel div img{
+    height: 21vh;
+    width: 10vw;
+}
 /*************** Meio End *************/
 
 
