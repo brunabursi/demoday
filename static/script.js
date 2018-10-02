@@ -12,12 +12,20 @@ let usuario = document.querySelector('#usuario');
 let empresa = document.querySelector('#enterprise');
 
 usuario.addEventListener('click', ()=>{
-    window.location.href='usu';
+    window.location.href='login';
 }
 )
 
 empresa.addEventListener('click', ()=>{
-    window.location.href='enterprise';
+    window.location.href='login';
 }
 )
 
+let logemp = document.querySelector('#logemp');
+let logusu = document.querySelector('#logusu'); 
+
+
+logemp.addEventListener('click', ()=>{
+    logemp.style.display == "none";
+}
+)
