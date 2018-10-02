@@ -6,14 +6,15 @@ function myFunction() {
         info.style.display = "flex";
     } else {
         info.style.display = "none";    }
-}
+    }
+    
+    let usuario = document.querySelector('#usuario');
+    let empresa = document.querySelector('#enterprise');
 
-let usuario = document.querySelector('#usuario');
-let empresa = document.querySelector('#enterprise');
-
-usuario.addEventListener('click', ()=>{
-    window.location.href='login';
-}
+    usuario.addEventListener('click', ()=>{
+        window.location.href='login';
+        
+    }
 )
 
 empresa.addEventListener('click', ()=>{
@@ -24,8 +25,17 @@ empresa.addEventListener('click', ()=>{
 let logemp = document.querySelector('#logemp');
 let logusu = document.querySelector('#logusu'); 
 
-
-logemp.addEventListener('click', ()=>{
-    logemp.style.display == "none";
+function emp(){
+    window.location.href='enterprise';
+    
 }
-)
+function usu(){
+    window.location.href='usu';
+}
+
+jQuery(document).ready(function($) { 
+    $(".scroll").click(function(event){        
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+   });
+  });

@@ -3,7 +3,6 @@
 let botao = document.querySelector("#hamburger");
 let lateral = document.querySelector("aside");
 
-
 botao.onclick = function(){
 
     lateral.classList.toggle("mostrando");
@@ -23,13 +22,8 @@ botao.onclick = function(){
     }
 }
 
-
 let link2 = document.querySelector("#BotaoDois");
 let primeiraAba = document.getElementsByClassName(".grade2");
-
-link2.onclick = function(){
-    console.log("Hello, World!");
-}
 
 function Grade1() {
     var x = document.getElementById("master");

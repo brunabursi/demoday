@@ -59,6 +59,9 @@
     padding: 8px;
     display: none;
 }
+.loginusu{
+    visibility:visible;
+}
 
 .textbox{
     width: 100%;

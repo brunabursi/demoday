@@ -1,8 +1,5 @@
 body {
-    width: 100vw;
-    height: 100vh;
     margin: 0;
-    padding: 0;
     background-image: url('/static/img/bgimg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -27,8 +24,7 @@ header {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    width: 100vw;
+    height: 120px;
     margin: auto;
     background-color: rgba(112, 70, 149, 0.7);
     text-decoration: none;
@@ -40,12 +36,11 @@ header div{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 a:hover{    
-    background-color: black;
-    border-radius: 10px;
+    color: black;
 }
 
 .logo {
@@ -81,13 +76,13 @@ aside.mostrando {
 }
 @keyframes fadeIn {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
     100% {
-      visibility: visible;
-      opacity: 1;
+        visibility: visible;
+        opacity: 1;
     }
-  }
+}
 aside ul {
     margin-top: 50px;
     display: flex;
@@ -134,31 +129,30 @@ aside li a{
 
 /*************** Meio Start **************/
 
-.center {
-    justify-content: center !important;
-}
-
-/*************** Middle Section Start **************/
-
-
-.meio{
+#init{
+    height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-    position: static;    
-    margin: 0 0 40px;
-    height: fit-content;
+    justify-content: space-around;
 }
 
-.meio div h1{
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    width: fit-content;
+.meio{
+    position: static;    
+    height: fit-content;    
+    text-transform: uppercase;  
+    text-align: justify; 
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meio h1{  
+    font-size: 24px;
+    text-align: center;
+    width: 380px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
 }
 
 .btn{
@@ -173,7 +167,7 @@ aside li a{
     justify-content: space-evenly;
     align-items: center;
     padding: 1em 0;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 .btn button{
@@ -187,7 +181,8 @@ aside li a{
     text-transform: uppercase;
     font-weight: bold;
     color: rgba(112, 70, 149);
-
+    margin: 2vw;
+    
 }
 
 button:hover{
@@ -196,34 +191,92 @@ button:hover{
     cursor: pointer;    
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    cursor: pointer;
-    transition: 0.4s;
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-/* Style the accordion panel. Note: hidden by default */
+/*************** Quem somos Start **************/
 
-#panel {
-    background-color: rgba(245, 245, 245, 0.9);
-    display: none;
-    border-radius: 30px;
+.desc{
+	height:fit-content;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 10vh 0 0;
+    padding: 2vw;
+}
+
+.desc p{
+	text-align: justify;
+}
+
+.qs{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.qs img{ 
+    width: 75vw;
+    height: 28vh;
+    padding: 0 30px 0 0;
+}
+/*************** Quem somos End *************/
+
+/*************** Pros Start **************/
+
+#pros{
+	height:fit-content;
+    background-color: rgba(112, 70, 149, 0.7);
+    margin: 10vh 0 0;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 2vw;
+}
+
+#pros p{
+    text-align: justify;
+}
+
+.proimg{
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+
+.proimg img{
+    width: 56vw;
+    height: 30vh;
+    
+}
+.empimg{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    
+}
+.empimg img{
+    width: 55vw;
+    height: 30vh;
+}
+.empimg p{
+    margin-left: 3vw;
 }
 
-#panel div{
-    display: block;
+
+/*************** Pros End *************/
+/*************** Empresas Start **************/
+
+#empresas{
+	height:fit-content;
+    background-color:rgba(255, 255, 255, 0.9);
+    margin: 10vh 0 0; 
+    padding: 2vw;
 }
 
-#panel div img{
-    height: 21vh;
-    width: 10vw;
+#empresas p{
+	text-align: justify;
 }
-/*************** Meio End *************/
-
-
-
+/*************** Empresas End **************/
 /*************** Devs Start **************/
 
 .devs {
@@ -234,7 +287,7 @@ button:hover{
     justify-content: space-evenly;
     padding: 10px 0;
     height: fit-content;
-    width: 100vw;
+    margin: 10vh 0 0;
 }
 
 .devs img {
@@ -274,14 +327,13 @@ footer {
     position: fixed;
     bottom:0;
     height: fit-content;
-    width: 100vw;
     background-color:black;
     margin: 0;
 }
 
 footer div{    
     text-align: justify;
-    padding: 5px;
+    padding: 5px 0;
 }
 
 footer div a{
@@ -289,9 +341,8 @@ footer div a{
     text-decoration: none;
     color: white;
     padding: 2px 7px;
-
+    
 }
-
 
 /*************** Footer End **************/
 
@@ -372,9 +423,7 @@ footer div a{
 
 /*************** Form End *************/
 
-
 /*************** Desktop Version 900px Start **************/
-
 
 @media (min-width: 900px) {
     
@@ -384,12 +433,12 @@ footer div a{
     
     .full{
         display: flex;
-        align-items: center;
         width: 100vw;
         justify-content: space-between;
         visibility: visible;
         flex-direction: column;
     }
+
     header div{
         margin: 5px 0;
     }
@@ -397,51 +446,65 @@ footer div a{
     header div h1{
         margin: 0;
     }
-
+    
     header div a{
         text-decoration: none;
         color: white;
-        padding: 3px 15px;
     }
-
+    
     #login{
         font-size: small;
         justify-content: flex-end;
     }
 
-
-    .btn{
-        width: 100vw;
+    #login a{
+        margin: 0 2vw;
     }
-
+    
     .btn button{
         height: 9vh;
         width: 35vw;
     }
     
-    .meio div h1{
-        width: fit-content;
-        max-width: 669px;
-        font-size: 2.5em !important;
+
+    .meio h1{
+        font-size: 30pt;
+        width: 51vw;
     }   
+
+    .qs{
+        flex-direction: row-reverse;
+    }
+
+    .qs img{
+        width: 30vw;
+    }
     
-    #panel{
-    width: 70vw;
-    }
 
-    #panel div{
-        display: flex;
-    }
-
-    footer{
-    position: relative;
-    bottom: 0;
-    }
-
-    .formu{
+    .proimg{
         flex-direction: row;
     }
 
+    .proimg img{
+        width: 15vw;
+    }
+
+    .empimg{
+        flex-direction: row;
+    }
+    .empimg img{
+      width: 17vw;
+    }
+    
+    footer{
+        position: relative;
+        bottom: 0;
+    }
+    
+    .formu{
+        flex-direction: row;
+    }
+    
 }
 
 /***************  Invisivel menu lateral para versao desktop Start ***********/
