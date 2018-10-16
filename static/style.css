@@ -216,10 +216,14 @@ button:hover{
     flex-direction: column-reverse;
 }
 
+.qs div :nth-child(1){
+    margin: 0;
+}
+
 .qs img{ 
     width: 75vw;
     height: 28vh;
-    padding: 0 30px 0 0;
+    padding: 30px;
 }
 /*************** Quem somos End *************/
 
@@ -438,7 +442,7 @@ footer div a{
         visibility: visible;
         flex-direction: column;
     }
-
+    
     header div{
         margin: 5px 0;
     }
@@ -456,7 +460,7 @@ footer div a{
         font-size: small;
         justify-content: flex-end;
     }
-
+    
     #login a{
         margin: 0 2vw;
     }
@@ -466,34 +470,35 @@ footer div a{
         width: 35vw;
     }
     
-
+    
     .meio h1{
         font-size: 30pt;
         width: 51vw;
     }   
-
+    
     .qs{
         flex-direction: row-reverse;
     }
-
+    
     .qs img{
         width: 30vw;
+        padding: 30px 30px 0 0;
     }
     
-
+    
     .proimg{
         flex-direction: row;
     }
-
+    
     .proimg img{
         width: 15vw;
     }
-
+    
     .empimg{
         flex-direction: row;
     }
     .empimg img{
-      width: 17vw;
+        width: 17vw;
     }
     
     footer{

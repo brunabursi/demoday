@@ -30,7 +30,7 @@ function emp(){
     
 }
 function usu(){
-    window.location.href='usu';
+    window.location.href='user';
 }
 
 jQuery(document).ready(function($) { 
