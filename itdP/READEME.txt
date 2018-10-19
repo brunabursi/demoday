@@ -1,0 +1,9 @@
+1 - Iniciar o mongo db /mongoDb/bin executando mongod.exe
+2 - Abrir mongoshell para ver de dados em /mongoDb/bin digitar "mongo"
+3 - para navegar no mongo shell:
+
+	-show dbs = mostra os banco de dados
+	-use itd = entra no banco de dados , caso não tenha ele cria um
+	-show collections 
+	-db.users.find(); = mostra os dados inseridos
+4- executar node index.js 

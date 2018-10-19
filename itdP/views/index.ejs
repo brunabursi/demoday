@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <%- include('shared/head')%>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        
+        <%-include('shared/menu')%>
+        
+    </header>
+    
+    <!-- SideBar section -->
+    
+    <aside>
+        <%-include('shared/hamburguer')%>
+    </aside>
+    
+    <!-- Middle Section -->  
+    <section id="init">  
+            <div class="btn">               
+                    <div>
+                        <button id="enterprise">Empresas</button>
+                        
+                        <button id="usuario">Profissionais</button>
+                    </div>            
+            </div>
+        <div class="meio">
+            <h1>Conecte sua empresa com um profissional junior</h1>
+        </div>
+       
+        <section class="home">
+			<div class="Cadastrese">
+				<h1>Cadastre-se! assim que nosso site estiver pronto mandaremos um email</h1>
+			</div>
+		
+			<form method="POST" action="/users/new">
+				<input type="text"  placeholder="Nome completo" name="nome"><br>
+				<input type="email"  placeholder="E-mail" name="email"><br>
+				<input type="text"  placeholder="Area de atuação" name="area"><br>
+				<button>Enviar</button>
+			</form>    
+        
+        </section> 
+      
+        
+    </section>
+    
+    <section class="infos">
+        <!-- Quem Somos Section -->
+        
+        <div class="desc" id="quem">
+            <h1>Quem Somos</h1>
+            <div class="qs">
+                <div>
+                    <p>
+                        Tudo começou com um grupo de amigos que estavam cursando a Academia de programação da Mastertech e procuravam seu primeiro emprego na área de tecnologia, todos nós enfrentamos a mesma dificuldade em nossa busca: "Por Favor envie seu Portifólio". Parecia impossível quebrar o ciclo de  preciso de um emprego para ter experiencia e experiencia para ter um emprego. Até que decidimos nos unir e ajudar a todos que passam por essa fase criando o IT&D. 
+                    </p>
+                    <p>
+                        O IT&D visa unir você, desenvolvedor/designer iniciante à pequenas empresas. Aqui você encontra projetos de empresas reais que precisam de um profissional mas não tem necessidades grandes o suficiente para empresas de tecnologia, logo, você profissional jr. tem a oportunidade de vivenciar prazos e a responsabilidade de lidar com um cliente e contruir o tão sonhado portifólio. Nosso site tem como objetivo ser um trampolim dos jovens profissionais de TI para o mercado de trabalho. 
+                    </p>                   
+                </div>
+                <img src="../static/img/QS.png" alt="quemsomos">
+            </div>
+            <p>
+                Esperamos que entre terminar os estudos e ter a carteira assinada não exista um período perdido, nem para vocês e nem para a sociedade. Nós acreditamos que uma mão lava a outra e assim temos um mundo melhor. Queremos mostrar o caminho das pedras para você alcançar o futuro que você quiser. 
+                A partir dos nossos desafios os candidatos são rankeados para aparecerem nas sugestões para as empresas contratantes - E nossos jr. aproveitam para continuar estudando e melhorando - estas por sua vez, disponibilizam os projetos e as referencias para serem usados em portifólios e plataformas de códigos como GitHub. Todos os nossos projetos são pagos, afinal somos jr mas não vivemos de sonhos, mas pela confiança das empresas em nós, cobramos uma fração do valor cobrado por uma grande empresa.						
+            </p>
+        </div>
+        
+        <!-- Profissionais Section -->
+        <div id="pros">
+            <h1>Profissionais</h1>
+            <div class="proimg">
+                <div>
+                    <p>O foco do IT&D é voltado ao profissional de PROGRAMAÇÃO e DESIGN que ainda não tem um portifólio. Como parametro para rankeamento dos candidatos na pagina de jobs, você terá uma pontuação baseada em desafios especialmente selecionados por nós. Os desafios tem como objetivo aprimorar suas skills, bem como provar as habilidades adquiridas ao longo de seus estudos para as empresas que nos procurarem. </p>
+                    <p>A IT&D fez esse site pensando em você, profissional jr., logo, não tem nenhum custo na criação de sua conta em nosso site e como somos jr mas não vivemos de sonhos, as empresas pagam uma porcentagem do que pagariam para uma empresa de tecnologia. Logo, você cria seu Portifólio e ainda ganha uma grana.</p>
+                    <p>Damos todo o suporte que você precisa para completar seus jobs. Contamos com um fórum onde você podee tirar sua dúvidas sobre os desafios do site ou dos jobs. Esperamos que logo você se torne um profissional completo para o mercado com um portifólio, experiencia e o mais importante.... O EMPREGO!!!!!</p>
+                   
+                </div>
+                <img src="../static/img/pro.png" alt="pros">
+            </div>
+        </div>
+        
+        <!-- Empresas Section -->
+        <div id="empresas">
+            <h1>Empresas</h1>
+            <div class="empimg">
+                <img src="../static/img/empresas.png" alt="empresas">
+                <div>
+                <p>Para você pequena empresa, que precisa de um sistema de registro, um logo para sua loja ou um site para mostrar sua ideia na internet, te conectamos com profissionais qualificados e que podem atender a sua demanda por uma fração do preço que uma grande empresa de tecnologia cobra. Assim você ajuda um novato a construir um portifólio e nós ajudamos você a impulsionar seu negocio.</p>
+                <p>A forma a qual rankeamos nossos profissionais é baseada em desafios os quais os profissionais são posto de forma gradativa a testes a fim de os aprimorar e também esta é uma forma de destacar aquele profissional mais empenhado por meio de parametros consisos o qual nosso site se baseia </p>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        
+        <!-- Devs Section -->
+        
+        <section class="devs">        
+            <div>
+                <div class="devsImg">
+                    <img src="../static/img/Bru.jpeg" alt="Foto">
+                </div>
+                <h1>Bruna</h1>
+                <p>"Através da plataforma consegui material para o meu portfólio"</p>
+            </div>
+            <div>
+                <div class="devsImg">
+                    <img src="../static/img/Mat.jpeg" alt="Foto">
+                </div>
+                <h1>Matheus</h1>
+                <p>"Através da plataforma consegui material para o meu portfólio"</p>
+            </div>
+            <div>
+                <div class="devsImg">
+                    <img src="../static/img/Sam.jpeg" alt="Foto">
+                </div>
+                <h1>Samuel</h1>	
+                <p>"Através da plataforma consegui material para o meu portfólio"</p>
+            </div>
+        </section>
+    </section>
+    
+    <!-- Footer Section -->
+    
+    <%-include('shared/footer')%>
+    
+</body>
+
+</html>

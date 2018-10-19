@@ -1,0 +1,293 @@
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0px;
+	left: 0;
+	background-color: rgba(112, 70, 149, 0.7);
+	overflow-x: hidden;
+	transition: 0.5s;
+    padding-top: 60px;
+    
+}
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	display: block;
+	transition: 0.5s;
+}
+
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+.perfil img{
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.perfilEnt img{
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.CAPA{
+    
+    margin-top: -3vh;
+    height: 13vh;
+    background-color:  rgba(112, 70, 149, 0.7);
+}
+
+
+
+.VazioSup {
+	
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.VazioSup h1 {
+    font-size: 20pt;
+    color: black;
+}
+.VazioSup h2 {
+    font-size: 15pt;
+    margin-top: -20px;
+    color:black;
+    font-weight: normal;
+}
+.apa{
+    visibility: hidden;
+ }
+
+.navega {
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    background-color: rgba(112, 70, 149, 0.7);  
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    text-decoration: none;
+     font-family: 'Montserrat', sans-serif;
+
+}
+.navega a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    
+    font-weight: normal;
+}
+.navega button{
+    border: none;
+    background-color: rgba(112, 70, 149, 0.7);
+    color: white;
+    font-size: 16pt
+}
+.grade2{
+    visibility: hidden;
+    margin-top: -145vh;
+}
+.jobC{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3%;
+    padding: 2vh;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+
+}
+.jobC h2 p{
+    font-size: 15pt;
+    font-weight: normal;
+}
+.jobC button {
+    color: black;
+    height: 9vh;
+    width: 48%;
+    border-radius: 10px;
+    font-size: 19px;
+}
+ 
+
+.Cabeca{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+   
+
+}
+.Cabeca img{
+    border-radius: 14%;
+   height: 10vh;
+   margin-right: 10px;
+}
+.Cabeca h2{
+   margin-top: 5px;
+}
+
+.desafios{
+    font-size: 0px;
+}
+
+
+@media (min-width: 900px){
+    .VazioSup {
+        margin: 2vw;
+        width: 300px;
+        height: 52vh;
+        background-color: white;
+        position: relative;
+        border-radius: 3%;
+        
+    }
+    .apa{
+        margin-top: 10px;
+        margin-left: -11vw;
+        display: flex;
+        position: relative;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 15px;
+        visibility:visible;
+    }
+    .apa h1{
+       color: white;
+    }
+    .apa a{
+        color: white;
+        text-decoration: none;
+        font-size: medium;
+        padding: 5px;
+    }
+     .apa input{
+        padding: 5px 5px;
+        border: 1px solid #ccc;
+        margin-left: -9vw;
+        height: 6vh;
+        width: 22vw;
+        border-radius: 5px;
+        font-size: medium;
+     }
+   
+
+    .perfil {
+        position: absolute;
+        top: 2vw;
+        left: 7,5vw;
+    }
+    .perfil img{
+        
+        border-radius: 50%;
+        height: 30vh;
+        width: 30vh;
+        margin-top: 10px;
+        margin-left: 2vw;
+    }
+    .perfilEnt{
+        position: absolute;
+        top: 2vw;
+        left: 25px;
+    }
+    .perfilEnt img{
+        border-radius: 50%;
+        height: 30vh;
+        width: 30vh;
+        margin-top: 10px;
+        margin-left: 1.5vw;
+    }
+    .navega {
+        height: 70px;
+        width: 48vw;
+        background-color: rgba(112, 70, 149, 0.7);  
+        cursor: pointer;
+        text-decoration: none;
+        margin-left: 350px;
+        border-radius: 10px;
+        position: relative;
+        top: -370px;
+    }
+    .navega div{
+       border-radius: 2px;
+    }
+    .navega button{
+        border: none;
+        background-color: rgba(112, 70, 149, 0.7);
+        color: white;
+        font-size: x-large;
+    }
+ 
+    .jobC{
+        position: relative;
+        top: -370px;
+        height: 280px;
+        width: 46vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;  
+        background: white;
+        border-radius: 10px;
+        padding: 2vh;
+        margin-left: 350px;
+        margin-top: 20px;
+    
+    
+    }
+    .jobC button {
+        color: black;
+        height: 9vh;
+        width: 150px;
+        border-radius: 10px;
+        font-size: 19px;
+    }
+    .sidenav {
+        visibility: hidden;
+    }
+    #hamburger{
+        visibility: hidden;
+    }
+
+    footer{
+        position: relative;
+        bottom: 0;
+    }
+    .Desafio{
+        position: absolute;
+        top: 16vh;
+        right: 1.5vw;
+        border-radius: 10px;
+    }
+    .Desafio img{
+       
+        border-radius: 10px;
+    }
+}
